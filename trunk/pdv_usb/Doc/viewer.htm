@@ -1,0 +1,15 @@
+<html>
+<head><title>ArchViewver</title>
+<script language="vbscript" src="scrpt_lib.vbs">
+set ocon=createobject("ADODB.Connection")
+schema(ocon,"1.udl",parent.frames("cx_list").document)
+</script>
+</head>
+<body>
+<map name="cx">
+<area shape="rect" coords="20,50,165,195" target="_blank" href="query.htm">
+</map>
+<iframe name="cx_list" ></iframe>
+<img src="cxema_dan.png" usemap="#cx">
+</body>
+</html>

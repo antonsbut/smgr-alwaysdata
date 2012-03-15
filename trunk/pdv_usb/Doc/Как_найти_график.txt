@@ -1,0 +1,33 @@
+
+Для отыскания интересующего графика в базе данных "pdmon_usb.mdb" 
+нужно проделать следующее:
+1) открыть список объектов (таблица ObjList) и выбрать номер объекта IdObject по названию объекта ObjNmae 
+и номеру выносного модуля DevNo;
+2) открыть список сигналов (таблица SigList) и выбрать по номеру объекта ObjId и названию сигнала SigName
+индекс интересующего сигнала IdSig;
+3) открыть таблицу со значениями JustValues или с графиками Curves и выбрать по дате DateAndTime и 
+номеру сигнала SigId интересующие записи. Таблица Curves - очень широкая, графики в ней записаны в строку,
+X0 и dX - начальное значение и шаг аргумента, Y0, Y1 и т.д. - значения графика.
+
+Примеры запросов
+
+Выбрать все записи за 18.12.2009 с графиками N(Q) для всех каналов всех объектов
+
+select * from Curves where year(dateandtime) = 2009 and month(dateandtime) = 12 and 
+day(dateandtime) = 18 and sigid > 500000
+
+Выбрать все записи за декабрь 2009 года с графиками всех сигналов объекта №1
+
+select  SigList.SigName, Curves.* from SigList inner join Curves on Curves.SigId=SigList.IdSig where ObjId=1
+and DateAndTime between #2009-12-31# and #2009-12-1#
+
+Для ускорения поиска в базе данных рекомендуется сверятся со схемой данных.
+
+Для очистки последовательно выполнить запросы:
+delete from Curves
+delete from EventsLog
+delete from JustValues
+delete from ObjList
+delete from PhaseWnd
+delete from SigList
+delete from Types
