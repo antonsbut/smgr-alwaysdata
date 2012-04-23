@@ -1,0 +1,845 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Серый форум / VBScript: заполнение Web-форм</title>
+<link rel="stylesheet" type="text/css" href="style/Oxygen.css" />
+</head>
+<body>
+
+<div id="punwrap">
+<div id="punviewtopic" class="pun">
+
+<div id="brdheader" class="block">
+	<div class="box">
+		<div id="brdtitle" class="inbox">
+			<h1><span>Серый форум</span></h1>
+			<p><span>разработка скриптов</span></p>
+		</div>
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li id="navindex"><a href="index.php">Список</a></li>
+				<li id="navuserlist"><a href="userlist.php">Пользователи</a></li>
+				<li><a href="elfchat.php">Чат <script type="text/javascript" src="chat/count.php"></script></a></li>
+				<li id="navrules"><a href="misc.php?action=rules">Правила</a></li>
+				<li id="navsearch"><a href="search.php">Поиск</a></li>
+				<li id="navregister"><a href="SCI_reg.php">Рeгистрация</a></li>
+				<li id="navlogin"><a href="login.php">Зайти</a></li>
+				<li id="navextra1"><a href="http://www.script-coding.com/">Главная</a></li>
+				<li id="navextra2"><a href="http://forum.script-coding.com/rules.html">Правила форума</a></li>
+				<li id="navextra3"><a href="http://www.google.com/cse/home?cx=005032125877213764876:7_djx8ukuso&hl=ru">Поиск Google</a></li>
+				<li id="navextra4"><a href="http://forum.atombyte.com/">Форум по LangMF</a></li>
+			</ul>
+		</div>
+		<div id="brdwelcome" class="inbox">
+			<p>Вы не зашли.</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="linkst">
+	<div class="inbox">
+		<p class="pagelink conl">Страниц: <strong>1</strong></p>
+		<p class="postlink conr">&nbsp;</p>
+		<ul><li><a href="index.php">Список</a></li><li>&nbsp;&raquo;&nbsp;Коллекция скриптов и идей</li><li>&nbsp;&raquo;&nbsp;<a href="viewforum.php?id=5">Windows Script Host, HTA (VBScript, JScript)</a></li><li>&nbsp;&raquo;&nbsp;<a href="viewtopic.php?id=158">VBScript: заполнение Web-форм</a></li></ul>
+    <div class="clearer"></div>
+	</div>
+</div>
+
+<div id="p702" class="blockpost rowodd firstpost">
+	<h2><span><span class="conr">#1&nbsp;</span><a href="viewtopic.php?pid=702#p702">2006-09-26 18:21:06</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postleft">
+				<dl>
+					<dt><strong><a href="profile.php?id=2">The gray Cardinal</a></strong></dt>
+					<dd class="usertitle"><strong>Администратор</strong></dd>
+					<dd class="postavatar"></dd>
+				</dl>
+			</div>
+			<div class="postright">
+				<h3>VBScript: заполнение Web-форм</h3>
+				<div class="postmsg">
+					<p>Скрипт (пример) запускает IE в скрытом окне, загружает ресурс <a href="http://mail.ru/">http://mail.ru/</a>, заполняет имя пользователя, домен и пароль для входа в личную почту, а затем делает окно IE видимым.<br /></p><div class="codebox"><div class="incqbox"><h4>Код:</h4><div class="scrollbox" style="height: 21em"><pre>Set objIE = CreateObject(&quot;InternetExplorer.Application&quot;)
+objIE.Visible = False
+objIE.Navigate &quot;http://mail.ru/&quot;
+While objIE.Busy
+    WScript.Sleep 200
+Wend
+Set objForm = objIE.Document.forms(&quot;Auth&quot;)
+'Set objForm = objIE.Document.forms(0)
+objForm.elements(&quot;Login&quot;).value = &quot;Vasya&quot;
+objForm.elements(&quot;Domain&quot;).value = &quot;bk.ru&quot;
+objForm.elements(&quot;Password&quot;).value = &quot;111&quot;
+objIE.Visible = True</pre></div></div></div>
+				</div>
+				<div class="postsignature"><hr /><span style="color: gray">Предложения в русском языке начинаются с большой буквы и заканчиваются точкой.<br />В названии ветки всегда должен быть указан язык программирования или среда исполнения скрипта, если это возможно.</span></div>
+			</div>
+			<div class="clearer"></div>
+			<div class="postfootleft"><p>Неактивен</p></div>
+			<div class="postfootright"><div>&nbsp;</div></div>
+		</div>
+	</div>
+</div>
+
+<div id="p4387" class="blockpost roweven">
+	<h2><span><span class="conr">#2&nbsp;</span><a href="viewtopic.php?pid=4387#p4387">2007-09-01 19:05:48</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postleft">
+				<dl>
+					<dt><strong><a href="profile.php?id=2">The gray Cardinal</a></strong></dt>
+					<dd class="usertitle"><strong>Администратор</strong></dd>
+					<dd class="postavatar"></dd>
+				</dl>
+			</div>
+			<div class="postright">
+				<h3> Re: VBScript: заполнение Web-форм</h3>
+				<div class="postmsg">
+					<p>У веб-форм есть метод submit(), с помощью которого нетрудно отправить данные. Например, в приведённом выше скрипте достаточно добавить:<br /></p><div class="codebox"><div class="incqbox"><h4>Код:</h4><div class="scrollbox" style="height: 4.5em"><pre>objForm.submit()</pre></div></div></div><p>Можно вообще не грузить страницу с формой для авторизации, а создать её в скрипте динамически. Приведённый ниже скрипт открывает Web-интерфейс указанного почтового ящика на сервере mail.ru.<br /></p><div class="codebox"><div class="incqbox"><h4>Код:</h4><div class="scrollbox" style="height: 35em"><pre>&lt;?xml version='1.0' encoding='windows-1251' standalone='yes'?&gt;
+&lt;job&gt;
+&lt;resource id='AuthPageHTML'&gt;&lt;![CDATA[
+&lt;HTML&gt;&lt;BODY&gt;
+&lt;FORM action='http://win.mail.ru/cgi-bin/auth' method='post' style='display:none;'&gt;
+    &lt;INPUT name='Login' value='MyLogin'&gt;
+    &lt;INPUT name='Domain' value='bk.ru'&gt;
+    &lt;INPUT name='Password' value='MyPassword'&gt;
+&lt;/FORM&gt;&lt;/BODY&gt;&lt;/HTML&gt;
+]]&gt;&lt;/resource&gt;
+
+&lt;object id='IE' progid='InternetExplorer.Application'/&gt;
+
+&lt;script language=&quot;JScript&quot;&gt;&lt;![CDATA[
+IE.navigate(&quot;about:blank&quot;); while (IE.busy) WScript.Sleep(100);
+IE.Document.write(getResource(&quot;AuthPageHTML&quot;)); IE.Document.close();
+var Err;
+try {
+    IE.Document.forms[0].submit();
+    IE.visible=true;
+} catch (Err) {IE.Quit();}
+]]&gt;&lt;/script&gt;
+&lt;/job&gt;</pre></div></div></div><p>Замените &quot;MyLogin&quot;, &quot;bk.ru&quot; и &quot;MyPassword&quot; на нужные вам значения, сохраните текст скрипта в текстовом файле с расширением .wsf и запустите его двойным щелчком.<br />Решение предложил <strong>wisgest</strong>.</p>
+				</div>
+				<div class="postsignature"><hr /><span style="color: gray">Предложения в русском языке начинаются с большой буквы и заканчиваются точкой.<br />В названии ветки всегда должен быть указан язык программирования или среда исполнения скрипта, если это возможно.</span></div>
+			</div>
+			<div class="clearer"></div>
+			<div class="postfootleft"><p>Неактивен</p></div>
+			<div class="postfootright"><div>&nbsp;</div></div>
+		</div>
+	</div>
+</div>
+
+<div id="p4388" class="blockpost rowodd">
+	<h2><span><span class="conr">#3&nbsp;</span><a href="viewtopic.php?pid=4388#p4388">2007-09-01 19:29:28</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postleft">
+				<dl>
+					<dt><strong><a href="profile.php?id=2">The gray Cardinal</a></strong></dt>
+					<dd class="usertitle"><strong>Администратор</strong></dd>
+					<dd class="postavatar"></dd>
+				</dl>
+			</div>
+			<div class="postright">
+				<h3> Re: VBScript: заполнение Web-форм</h3>
+				<div class="postmsg">
+					<p>Вместо использования скриптов WSH можно просто создать html-файл следующего содержания:<br /></p><div class="codebox"><div class="incqbox"><h4>Код:</h4><div class="scrollbox" style="height: 12em"><pre>&lt;HTML&gt;&lt;BODY onLoad='document.forms[0].submit();'&gt;
+&lt;FORM action='http://win.mail.ru/cgi-bin/auth' method='post'&gt;
+    &lt;INPUT type='hidden' name='Login' value='MyLogin'&gt;
+    &lt;INPUT type='hidden' name='Domain' value='bk.ru'&gt;
+    &lt;INPUT type='hidden' name='Password' value='MyPassword'&gt;
+&lt;/FORM&gt;&lt;/BODY&gt;&lt;/HTML&gt;</pre></div></div></div><p>Замените &quot;MyLogin&quot;, &quot;bk.ru&quot; и &quot;MyPassword&quot; на нужные вам значения. Этот файл можно открывать в любом веб-обозревателе, поддерживающем JavaScript.<br /><br />P.S. Для входа на mail.ru сразу в папку &quot;Входящие&quot; в форму можно добавить элемент:<br /></p><div class="codebox"><div class="incqbox"><h4>Код:</h4><div class="scrollbox" style="height: 4.5em"><pre>&lt;INPUT type='hidden' name='page' value='msglist?folder=0'&gt;</pre></div></div></div><p>Решение предложил <strong>wisgest</strong>.</p>
+				</div>
+				<div class="postsignature"><hr /><span style="color: gray">Предложения в русском языке начинаются с большой буквы и заканчиваются точкой.<br />В названии ветки всегда должен быть указан язык программирования или среда исполнения скрипта, если это возможно.</span></div>
+			</div>
+			<div class="clearer"></div>
+			<div class="postfootleft"><p>Неактивен</p></div>
+			<div class="postfootright"><div>&nbsp;</div></div>
+		</div>
+	</div>
+</div>
+
+<div id="p7551" class="blockpost roweven">
+	<h2><span><span class="conr">#4&nbsp;</span><a href="viewtopic.php?pid=7551#p7551">2008-01-01 18:51:29</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postleft">
+				<dl>
+					<dt><strong><a href="profile.php?id=2">The gray Cardinal</a></strong></dt>
+					<dd class="usertitle"><strong>Администратор</strong></dd>
+					<dd class="postavatar"></dd>
+				</dl>
+			</div>
+			<div class="postright">
+				<h3> Re: VBScript: заполнение Web-форм</h3>
+				<div class="postmsg">
+					<p>Пример автоматической закачки файла на сайт <a href="http://www.zalil.ru">http://www.zalil.ru</a>. Скрипт отправляет файл C:\boot.ini методом POST и выдаёт окно InternetExplorer со ссылкой на файл.<br /><br />Можно отправлять форму двумя типами кодирования: &quot;application/x-www-form-urlencoded&quot; - для отправки полей формы методом POST и &quot;multipart/form-data&quot; - для отправки файлов. Класс формы независим от компонентов передачи данных (таких, как XmlHttp и WinHttpRequest, или других компонентов, имеющих аналогичные возможности). Можно отправлять данные в любой кодировке.<br /></p><div class="codebox"><div class="incqbox"><h4>Код:</h4><div class="scrollbox" style="height: 35em"><pre>'/// Создаём новый класс формы
+Set Form = New HttpFormClass
+'/// Отправлять будем на сайт www.zalil.ru
+Form.Action = &quot;http://www.zalil.ru/upload/&quot;
+'/// Т.к нужно отправить файлы, то указываем метод - POST
+Form.Method = &quot;POST&quot;
+'/// Добавляем файл boot.ini
+Form.AddFile &quot;file&quot;,&quot;C:\boot.ini&quot;
+'/// Указываем тип кодирования данных формы, необходимый для отправки файлов. 
+'/// Если его не указать, то вместо отправки содержимого файлов будут отправлены только их пути
+Form.Enctype = &quot;multipart/form-data&quot;
+
+'/// Создаём объект для передачи данных
+Set XmlHttp = CreateObject(&quot;MSXML2.XMLHTTP&quot;)
+
+'/// Проверяем каким методом нужно отправить форму
+if Form.Method = &quot;GET&quot; Then
+    '/// Получаем содерживое VarBody
+    VarBody = Form.VarBody 
+    '/// Если форма отправляется GET-ом то VarBody нужно присоединить к URL
+    If VarBody &lt;&gt; &quot;&quot; Then
+        Form.Action = Form.Action &amp; &quot;?&quot; &amp; VarBody
+        '/// В итоге получаем URL типа URL?param1=value&amp;param2=value
+    End if
+End if
+
+'/// Открываем Request. Последний параметр в примере поставлен в False. 
+'/// Таким образом отключена асинхронность передачи данных. Это сделано для упрощения примера. 
+XMLHttp.Open Form.Method,Form.Action,False
+
+'/// Если метод &quot;POST&quot;, то добавляем заголовок к отправляемым данным 
+'/// Пример:
+'/// Content-type: multipart/form-data; boundary=--------------aAbSbIuL, если из формы отправляются файлы
+'/// или
+'/// Content-type: application/x-www-form-urlencoded, если отправляется обычная форма с полями.
+If Form.Method = &quot;POST&quot; Then XMLHttp.setrequestheader &quot;Content-type&quot;,Form.Enctype &amp; &quot;;boundary=&quot; &amp; Form.Boundary
+
+
+'/// Отправляем запрос
+XMLHttp.Send Form.VarBody
+
+'/// Проверяем статус ответа сервера
+Select Case XMLHttp.status
+Case 200 'OK
+    '/// Данные успешно приняты
+    '/// Получив данные хорошо бы их просмотреть. Для этого откроем окно InternetExplorer-а
+    Set InternetExplorer = CreateObject(&quot;InternetExplorer.Application&quot;)
+    '/// Делаем его видимым
+    InternetExplorer.Visible = True
+    '/// По умолчанию в нём не существует объект Document. Поэтому переводим его на пустую страницу
+    InternetExplorer.navigate &quot;about:blank&quot;
+    '/// Ждём полной загрузки
+    Do
+    Loop Until InternetExplorer.readystate = 4
+    '/// Заполняем документ полученным содержимым
+    InternetExplorer.Document.body.innerhtml = XMLHttp.responsetext
+Case Else 
+    '/// Остальные статусы рассматриваются как ошибка. 
+    '/// Но в принципе есть и статусы, которые не являются ошибкой. К примеру статус редиректа
+    MsgBox XMLHttp.StatusText,vbCritical,XMLHttp.status
+End Select
+
+'/// Класс HTTP формы
+Class HttpFormClass
+    '/// Коллекция полей формы
+    Private Fields
+    '/// Коллекция файлов формы
+    Private Files
+    '/// Переменные для хранения Property формы
+    Private PropEnctype        '/// Типа кодирования
+    Private PropAction        '/// URL на который будут отправлены данные
+    Private PropMethod        '/// Метод которым будут отправлены данные
+    Private PropBoundary    '/// Разделитель которым будут разделены данные
+    Private PropCharset        '/// Кодировка в которой данные будут отправлены
+
+    '/// Процедура создания класса
+    Private Sub Class_Initialize
+        '/// Создаём коллекции для хранения полей и файлов
+        Set Fields = CreateObject(&quot;Scripting.Dictionary&quot;)
+        Set Files = CreateObject(&quot;Scripting.Dictionary&quot;)
+    End Sub 
+
+    '/// Установка Action
+    Public Property Let Action(Value)
+        PropAction = Value
+    End Property
+    '/// Чтение Action
+    Public Property Get Action
+        if PropAction = &quot;&quot; Then PropAction = &quot;about:blank&quot;
+        Action = PropAction
+    End Property
+
+    '/// Установка Method.
+    Public Property Let Method(Value)
+        PropMethod = UCase(Value)
+    End Property
+
+    '/// Чтение Method. По умолчанию возвращаем GET
+    Public Property Get Method
+        if PropMethod = &quot;&quot; Then PropMethod = &quot;GET&quot;
+        Method = PropMethod
+    End Property
+    
+    '/// Установка Enctype.
+    Public Property Let Enctype(Value)
+        Value = lCase(Value)
+        Select Case Value
+        Case &quot;multipart/form-data&quot;
+            PropEnctype = Value
+        Case Else
+            PropEnctype = &quot;application/x-www-form-urlencoded&quot;
+        End Select
+    End Property
+
+    '/// Чтение Enctype. По умолчанию &quot;application/x-www-form-urlencoded&quot; 
+    Public Property Get Enctype
+        if PropEnctype = &quot;&quot; Then PropEnctype = &quot;application/x-www-form-urlencoded&quot;
+        Enctype = PropEnctype
+    End Property
+
+    '/// Установка кодировки отправляемых данных
+    Public Property Let Charset(Param)
+        PropCharset = Param
+    End Property
+
+    '/// По умолчанию Windows-1251
+    Public Property Get Charset
+        Const DefaultCharset = &quot;Windows-1251&quot;
+        if PropCharset = &quot;&quot; Then PropCharset = DefaultCharset
+        Charset = PropCharset
+    End Property
+
+    '/// Добавление файла
+    Function AddFile(FieldName,FileName)
+        if FileName = &quot;&quot; Then Exit Function
+        '/// Создаём объект стрим(поток)
+        Dim Stream
+        Set Stream = CreateObject(&quot;ADODB.Stream&quot;)
+        '/// Выставляем его тип как двоичный.
+        Stream.Type = 1
+        '/// Открываем поток
+        Stream.Open
+        '/// Загружаем необходимый нам файл
+        Stream.LoadFromFile FileName
+        '/// Складываем путь и файл в массив из двух элементов
+        Dim FileContentArray(2)
+        '/// В нулевой элемент передаём путь
+        FileContentArray(0) = FileName
+
+        '/// Теперь определяет тип файла. И в первый элемент сохраняем тип содержимого.
+        Dim FileExtension,DotPosition,ContentType
+        '/// Проверяем есть ли у файла расширение и получаем его в переменную.
+        DotPosition = InStrRev(FileName,&quot;.&quot;) 
+        if DotPosition &gt; 0 Then FileExtension = LCase(mid(FileName,DotPosition + 1))
+        '/// Выбираем известные нам типы файлов. Для примера добавлены только несколько.
+        Select Case FileExtension
+        Case &quot;bmp&quot;,&quot;gif&quot;,&quot;jpeg&quot;,&quot;jpg&quot;,&quot;png&quot;'/// файлы картинок    
+            FileContentArray(1) = &quot;image/&quot; &amp; FileExtension
+        Case &quot;zip&quot;'/// zip архив                                
+            FileContentArray(1) = &quot;application/x-zip-compressed&quot;
+        Case &quot;mdb&quot;'/// файл базы данных ACCESS                                
+            FileContentArray(1) = &quot;application/msaccess&quot;
+        Case &quot;xls&quot;'/// Файл EXCEL                                
+            FileContentArray(1) = &quot;application/vnd.ms-excel&quot;
+        Case &quot;doc&quot;,&quot;dot&quot;'/// WORD документ                                
+            FileContentArray(1) = &quot;application/msword&quot;
+        Case Else'/// Для неизвестных файлов делаем заголовок &quot;application/octet-stream&quot;                                
+            FileContentArray(1) = &quot;application/octet-stream&quot;
+        End Select
+
+        '/// Во второй элемент считываем содержимое
+        FileContentArray(2) = Stream.Read
+
+        '/// Передаём созданный массив в коллекцию
+        Files(FieldName) = FileContentArray
+    End Function
+    
+    '/// Добавление поля 
+    Public Function AddField(Name,Value)
+        Fields(Name) = Value
+    End Function
+
+    '/// Функция кодирования недопустимых символов в URL.
+    Public Function EncodeURIcomponent(SourceString)
+        Dim I, C, Out
+        For I = 1 To Len(SourceString)
+          C = Asc(Mid(SourceString, I, 1))
+          '/// Пробелы заменяем на плюс
+          If C = 32 Then
+            EncodeURIcomponent = EncodeURIcomponent + &quot;+&quot;
+            '/// Запрещённые символы заменяем на &quot;%&quot; и HEX значение от кода символа
+          ElseIf (C &lt; 48 Or C &gt; 126) Or (C &gt; 56 And C &lt;= 64) Then
+            EncodeURIcomponent = EncodeURIcomponent + &quot;%&quot; + Hex(C)
+          Else
+          '/// Разрещённые символы добавляем как есть
+            EncodeURIcomponent = EncodeURIcomponent + Chr(C)
+          End If
+        Next
+    End Function
+
+    '/// Функция генерации разделителей между данными.
+    Private Function GenerateBoundary()
+        Dim Char
+        Dim N
+        '/// Запускаем цикл на 12 итераций. Генерим строку из 12 символов
+        For N = 1 To 12
+            Randomize
+            '/// Взяты символы от a-z.
+            Char = Chr(CLng(Rnd * 25) + 97)
+            'Если порядковый номер символа кратен двум, то делаем его заглавным
+            if N mod 2 Then Char = UCase(Char)
+            GenerateBoundary = GenerateBoundary &amp; Char
+        Next
+    End Function
+    
+    '/// Получение разделителя между данными. Если он не установлен, то генерим его
+    Public Property Get Boundary
+        if PropBoundary = &quot;&quot; Then PropBoundary = GenerateBoundary
+        '/// К началу добавляем 27 символов &quot;-&quot;. Не знаю зачем так много, но IE так делает ))
+        Boundary = String(27,&quot;-&quot;) &amp; PropBoundary
+    End Property
+
+    '/// Получение 
+    Public Property Get VarBody
+        '/// Определяем каким методом будут отправляться данные
+        Select Case Method
+        Case &quot;POST&quot;
+            Select Case Enctype
+            Case &quot;multipart/form-data&quot;
+                '/// Разделитель который добавляется по умолчанию всегда
+                Const DefaultBoundary = &quot;--&quot;
+    
+                '/// Открываем объект стрим на запись
+                Dim Stream
+                Set Stream = CreateObject(&quot;ADODB.Stream&quot;)
+                Stream.Type = 1
+                Stream.Mode = 3
+                Stream.Open
+                
+                '/// Если количество полей больше 0 то перебираем их собираем их в одну переменну, добавляя заголовки
+                If Fields.Count &gt; 0 Then
+                    '/// FieldsBody - контейнер для сбора всех полей. FieldHeader - заголовок поля
+                    Dim FieldsBody,FieldHeader
+                    For Each FieldName in Fields
+                        '/// Добавляем в заголовке информацию о том, что данное поле относится к данным формы. На хвосте добавляем перенос
+                        '/// Примерный вид заголовка &quot;Content-Disposition: form-data; name=&quot;Имя_поля&quot;
+                        FieldHeader = &quot;Content-Disposition: form-data; name=&quot;&quot;&quot; &amp; FieldName &amp; &quot;&quot;&quot;&quot; &amp; vbCrLf
+                        '/// Собираем тело поля и добавляем в общую переменную. 
+                        '/// Результат сборки одного поля выглядит так
+                        '/// -----------------------------QoJtOkQvNnHa
+                        '/// Content-Disposition: form-data; name=&quot;Field1&quot;
+                        '///
+                        '/// FieldContent
+
+                        FieldsBody = FieldsBody &amp; DefaultBoundary &amp; Boundary &amp; vbCrlf &amp; FieldHeader &amp; vbCrlf &amp; Fields(FieldName) &amp; vbCrlf
+                    Next
+                    '//// Конвертируем собранные поля в двоичные данные записываем в поток
+                    Stream.Write StringToBinary(FieldsBody,Charset)
+                End if
+                
+                '/// Перебираем файлы
+                For Each FieldName in Files
+                    '/// Собираем заголовок
+                    '/// Пример вида заголовка:
+                    '/// ---------------------------QoJtOkQvNnHz
+                    '/// Content-Disposition: form-data; name=&quot;File1&quot;; filename=&quot;C:\file.zip&quot;
+                    '/// Content-Type: application/octet-stream
+                    '///
+                    FieldHeader = DefaultBoundary &amp; Boundary &amp; vbCrlf &amp; &quot;Content-Disposition: form-data; name=&quot;&quot;&quot; &amp; FieldName &amp; &quot;&quot;&quot;; filename=&quot;&quot;&quot; &amp; Files(FieldName)(0) &amp; &quot;&quot;&quot;&quot; &amp; vbCrlf &amp; &quot;Content-Type: &quot; &amp; Files(FieldName)(1) &amp; vbCrLf &amp; vbCrlf
+                    '/// Записываем заголовок в стрим
+                    Stream.Write StringToBinary(FieldHeader,Charset)
+                    '/// Записываем тело файла в стрим
+                    if Not isNull(Files(FieldName)(2)) Then Stream.Write Files(FieldName)(2)
+                Next
+
+                '/// И в конце передаваемых данных добавляем окончательный разделитель.
+                '/// ---------------------------QoJtOkQvNnHz--
+                Stream.Write StringToBinary(vbCrlf &amp; DefaultBoundary &amp; Boundary &amp; DefaultBoundary,Charset)
+                '/// Переводим курсор в объекте на начало данных
+                Stream.Position = 0
+                '/// Считываем данные в VarBody
+                VarBody = Stream.Read
+            End Select
+        Case Else '/// На случай если форма отправляется GET-ом
+            Dim FieldName
+            '/// Собираем поля и объединяем их следующим образом &quot;имя_поля=значение_поля&amp;имя_поля=значение_поля&quot;
+            For Each FieldName in Fields.Keys
+                VarBody = VarBody &amp; EncodeURIcomponent(FieldName) &amp; &quot;=&quot; &amp; EncodeURIcomponent(Fields(FieldName)) &amp; &quot;&amp;&quot;
+            Next
+            '/// Для файлов и делаем объединение &quot;имя_поля=путь_файла&amp;имя_поля=путь_файла&quot;
+            For Each FieldName in Files.Keys
+                VarBody = VarBody &amp; EncodeURIcomponent(FieldName) &amp; &quot;=&quot; &amp; EncodeURIcomponent(Files(FieldName)(0)) &amp; &quot;&amp;&quot;
+            Next
+            '/// Убираем лищний символ &quot;&amp;&quot; на хвосте
+            if VarBody &lt;&gt; &quot;&quot; Then VarBody = Left(VarBody,len(VarBody)-1)
+        End Select
+    End Property    
+    
+    '/// Конвертор текста в двоичные данные с учётом кодировки
+    Private Function StringToBinary(SourceString,Charset)
+        '/// Если текст не передан, выходим из процедуры
+        if isEmpty(SourceString) Then Exit Function
+        '/// Создаём объект для работы с двоичными данными
+        Dim Stream
+        Set Stream = CreateObject(&quot;ADODB.Stream&quot;)
+        With Stream
+            '/// Если кодировка указана, то устанавливает её
+            if Charset &lt;&gt; &quot;&quot; Then .Charset = Charset
+            '/// Настраиваем объект
+            'Указываем тип данных которые в него передадим
+            .Type = 2        'adTypeText=2; adTypeBinary=1
+            'Разрешаем на запись и чтение. Чтобы после передачи данных в объект, получить из него изменённые.
+            .Mode = 3        'adModeRead=1; adModeWrite = 2; adModeReadWrite = 3;
+            .Open            'Открываем объект
+            '/// Передаём текст в объект
+            .WriteText SourceString
+            '/// Перемещаем курсор в нулевую позицию, чтобы встать на начало данных.
+            .Position = 0
+            '/// Меняем тип данных на двоичный adTypeBinary=1
+            .Type = 1
+            '/// Возвращаем данные из функции наружу
+            StringToBinary = Stream.Read
+        End With
+    End Function
+    
+    '//// Функция очистки полей
+    Public Function Clear
+        '/// Очищаем коллекцию полей
+        Fields.RemoveAll
+        '/// Очищаем коллекцию файлов
+        Fields.RemoveAll
+    End Function
+    
+End Class</pre></div></div></div><p>Автор примера - <strong>Xameleon</strong>.</p>
+				</div>
+				<div class="postsignature"><hr /><span style="color: gray">Предложения в русском языке начинаются с большой буквы и заканчиваются точкой.<br />В названии ветки всегда должен быть указан язык программирования или среда исполнения скрипта, если это возможно.</span></div>
+			</div>
+			<div class="clearer"></div>
+			<div class="postfootleft"><p>Неактивен</p></div>
+			<div class="postfootright"><div>&nbsp;</div></div>
+		</div>
+	</div>
+</div>
+
+<div id="p8233" class="blockpost rowodd">
+	<h2><span><span class="conr">#5&nbsp;</span><a href="viewtopic.php?pid=8233#p8233">2008-01-23 17:04:03</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postleft">
+				<dl>
+					<dt><strong><a href="profile.php?id=8836">Xameleon</a></strong></dt>
+					<dd class="usertitle"><strong>Модератор</strong></dd>
+					<dd class="postavatar"></dd>
+				</dl>
+			</div>
+			<div class="postright">
+				<h3> Re: VBScript: заполнение Web-форм</h3>
+				<div class="postmsg">
+					<p>Решил тут попользоваться собственным творением и нашёл несколько багов и возможностей для упрощения и улучшения. <img src="img/smilies/roll.png" width="15" height="15" alt="roll" /> Так что теперь WebFormClass v.3.0 ))<br /><br />1) Убрал ненужную функцию конвертации и использование Scripting.Dictionary, что значительно сократило код.&nbsp; <br />2) Расписал свойства и методы формы.&nbsp; <br /><br /></p><div class="codebox"><div class="incqbox"><h4>Код:</h4><div class="scrollbox" style="height: 35em"><pre>'Описание класса WebFormClass 
+    
+'Пример создания: &quot;Set WebForm = New WebFormClass&quot; 
+    
+'Form.Action             ' Свойство - URL на который будут отправлены данные. (чтение/запись) 
+'Form.AddField           ' Процедура - Добавление поля. 
+'Form.AddFile            ' Процедура - Добавление файла. 
+'Form.Boundary           ' Свойство - Разделитель между данными (чтение) 
+'Form.Enctype            ' Свойство - Тип кодирования формы (Для отправки полей - &quot;application/x-www-form-urlencoded&quot;. Для отправки полей и файлов - &quot;multipart/form-data&quot;) (чтение/запись) 
+'Form.Method             ' Свойство - Метод отправки данных (GET / POST) 
+'Form.VarBody            ' Свойство - Сформированные данные для отправки (чтение/запись) 
+
+'Пример отправки файла на сайт http://www.zalil.ru 
+    
+Dim WebForm 
+'/// Создаём новый класс формы 
+Set WebForm = New WebFormClass 
+'/// Указываем куда будем отправлять данные 
+WebForm.Action = &quot;http://www.zalil.ru/upload/&quot; 
+'/// Устанавливаем метод передачи POST 
+WebForm.Method = &quot;POST&quot; 
+'/// Для того чтобы передались файлы устанавливаем тип кодирования multipart/form-data 
+WebForm.Enctype = &quot;multipart/form-data&quot; 
+'/// Добавляем файл 
+WebForm.AddFile &quot;file&quot;, &quot;C:\boot.ini&quot; 
+'/// Запускаем процедуру отправку     
+Submit WebForm
+
+Sub Submit(WebForm) 
+    '/// Создаём объект отправки данных 
+    Dim XMLHTTP 
+    Set XMLHTTP = CreateObject(&quot;MSXML2.XMLHTTP&quot;) 
+    '/// Открываем соединение с URL 
+    XMLHTTP.Open WebForm.Method, WebForm.Action, False 
+    '/// Если тип передачи данных POST, то добавляем к пакету заголовки 
+
+    '/// Если отправляем с кодированием &quot;multipart/form-data&quot;, то добавляем информацию о разделителе данных 
+    If WebForm.Method = &quot;POST&quot; Then XMLHTTP.setrequestheader &quot;Content-type&quot;, WebForm.Enctype '&amp; &quot;; boundary=&quot; &amp; WebForm.Boundary 
+    
+    '/// Отправляем запрос 
+    XMLHTTP.Send WebForm.VarBody 
+    '/// Смотрим статус ответа 
+    Select Case XMLHTTP.Status 
+    '/// Если 200 - OK. Данные переданы успешно 
+    Case 200 
+        Dim InternetExplorer 
+        Set InternetExplorer = CreateObject(&quot;InternetExplorer.Application&quot;) 
+        InternetExplorer.Visible = True 
+        InternetExplorer.Navigate &quot;about:blank&quot; 
+        Do 
+                        WScript.Sleep 100 
+        Loop Until InternetExplorer.readystate = 4 
+        InternetExplorer.document.write XMLHTTP.responsetext 
+    Case Else 
+        MsgBox XMLHTTP.Status &amp; &quot; &quot; &amp; StatusText, vbCritical, &quot;Ошибка при передаче данных !&quot; 
+    End Select 
+End Sub 
+
+
+'/// Класс формы 
+Class WebFormClass
+    '/// Класс формы
+    Private Fields, Files
+    Private PropertyEnctype, PropertyMethod, PropertyBoundary, PropertyAction
+
+    Private Sub Class_Initialize()
+        Fields = Array()
+        Files = Array()
+        PropertyEnctype = &quot;application/x-www-form-urlencoded&quot;
+        PropertyMethod = &quot;GET&quot;
+        PropertyBoundary = String(27, &quot;-&quot;) &amp; GenerateBoundary
+        PropertyAction = &quot;about:blank&quot;
+    End Sub
+
+    Public Property Let Action(Value)
+        PropertyAction = Value
+    End Property
+
+    Public Property Get Action()
+        Action = PropertyAction
+        If PropertyMethod = &quot;GET&quot; Then
+            Dim Params
+            Params = VarBody
+            If VarBody &lt;&gt; &quot;&quot; Then Action = Action &amp; &quot;?&quot; &amp; Params
+        End If
+    End Property
+
+    Public Property Get Boundary()
+        Boundary = PropertyBoundary
+    End Property
+
+    Public Property Get Method()
+        Method = PropertyMethod
+    End Property
+
+    Public Property Let Method(Value)
+        Value = UCase(Value)
+        If Value = &quot;GET&quot; Or Value = &quot;POST&quot; Then PropertyMethod = Value
+    End Property
+
+    Public Property Get Enctype()
+        Enctype = PropertyEnctype
+        If PropertyEnctype = &quot;multipart/form-data&quot; Then Enctype = Enctype &amp; &quot;; boundary=&quot; &amp; PropertyBoundary
+    End Property
+
+    Public Property Let Enctype(Value)
+        Value = LCase(Value)
+        If Value = &quot;multipart/form-data&quot; Or Value = &quot;application/x-www-form-urlencoded&quot; Then PropertyEnctype = Value
+    End Property
+
+    Public Sub AddField(Name, Value)
+        ReDim Preserve Fields(UBound(Fields) + 1)
+        Fields(UBound(Fields)) = Array(Name, Value)
+    End Sub
+
+    Public Sub AddFile(Name, Value)
+        ReDim Preserve Files(UBound(Files) + 1)
+        Files(UBound(Files)) = Array(Name, Value)
+    End Sub
+      
+
+    Public Property Get VarBody()
+        If PropertyMethod = &quot;POST&quot; And PropertyEnctype = &quot;multipart/form-data&quot; Then
+            Const DefaultBoundary = &quot;--&quot;
+            Dim Stream
+            Set Stream = CreateObject(&quot;ADODB.Stream&quot;)
+            Stream.Type = 2
+            Stream.Mode = 3
+            Stream.Charset = &quot;Windows-1251&quot;
+            Stream.Open
+            
+            Dim FieldHeader, FieldsBody
+            
+            For Each Field In Fields
+                FieldHeader = &quot;Content-Disposition: form-data; name=&quot;&quot;&quot; &amp; Field(0) &amp; &quot;&quot;&quot;&quot;
+                FieldsBody = FieldsBody &amp; DefaultBoundary &amp; PropertyBoundary &amp; vbCrLf &amp; FieldHeader &amp; vbCrLf &amp; Field(1) &amp; vbCrLf
+            Next
+            
+            Stream.WriteText FieldsBody
+            
+            Dim FileHeader
+            
+            For Each File In Files
+                If LoadFile(File(1), Data) Then
+                    FileHeader = DefaultBoundary &amp; Boundary &amp; vbCrLf &amp; &quot;Content-Disposition: form-data; name=&quot;&quot;&quot; &amp; File(0) &amp; &quot;&quot;&quot;; filename=&quot;&quot;&quot; &amp; File(1) &amp; &quot;&quot;&quot;&quot; &amp; vbCrLf &amp; &quot;Content-Type: octet/stream&quot; &amp; vbCrLf &amp; vbCrLf
+                    Stream.WriteText FileHeader
+                    Stream.Position = 0
+                    Stream.Type = 1
+                    Stream.Position = Stream.Size
+                    Stream.write Data
+                    Stream.Position = 0
+                    Stream.Type = 2
+                    Stream.Position = Stream.Size
+                End If
+            Next
+            
+            Stream.Position = 0
+            Stream.Type = 2
+            Stream.Position = Stream.Size
+            Stream.WriteText vbCrLf &amp; DefaultBoundary &amp; PropertyBoundary &amp; DefaultBoundary
+            
+            Stream.Position = 0
+            Stream.Type = 1
+            
+            VarBody = Stream.Read
+        Else
+            For Each Field In Fields
+                VarBody = VarBody &amp; URLEncode(Field(0)) &amp; &quot;=&quot; &amp; URLEncode(Field(1)) &amp; &quot;&amp;&quot;
+            Next
+            For Each File In Files
+                VarBody = VarBody &amp; URLEncode(File(0)) &amp; &quot;=&quot; &amp; URLEncode(File(1)) &amp; &quot;&amp;&quot;
+            Next
+            If Len(VarBody) &gt; 0 Then VarBody = Left(VarBody, Len(VarBody) - 1)
+        End If
+    End Property
+
+    Private Function URLEncode(Data)
+        Dim CharPosition, CharCode
+        For CharPosition = 1 To Len(Data)
+            CharCode = Asc(Mid(Data, CharPosition, 1))
+            If CharCode = 32 Then
+                URLEncode = URLEncode + &quot;+&quot;
+            ElseIf (CharCode &lt; 48 Or CharCode &gt; 126) Or (CharCode &gt; 56 And CharCode &lt;= 64) Then
+                URLEncode = URLEncode + &quot;%&quot; + Right(&quot;0&quot; &amp; Hex(CharCode), 2)
+            Else
+                URLEncode = URLEncode + Chr(CharCode)
+            End If
+        Next
+    End Function
+
+    Private Function LoadFile(Path, Data)
+        On Error Resume Next
+        Dim Stream
+        Set Stream = CreateObject(&quot;ADODB.Stream&quot;)
+        Stream.Type = 1
+        Stream.Mode = 3
+        Stream.Open
+        Stream.LoadFromFile Path
+        If Err.Number &lt;&gt; 0 Then Exit Function
+        Data = Stream.Read
+        LoadFile = True
+    End Function
+
+    Private Function GenerateBoundary()
+        Dim Char
+        Dim N, Start
+        Const Chars = &quot;abcdefghijklmnopqrstuvxyz0123456789&quot;
+        Randomize
+        For N = 1 To 12
+            Start = CLng(Rnd * (Len(Chars) - 1)) + 1
+            Char = Mid(Chars, Start, 1)
+            If Start Mod 2 Then Char = UCase(Char)
+            GenerateBoundary = GenerateBoundary &amp; Char
+        Next
+    End Function
+End Class</pre></div></div></div>
+					<p class="postedit"><em>Отредактировано Xameleon (2008-02-05 14:43:30)</em></p>
+				</div>
+				<div class="postsignature"><hr />Господи, дай мне исходники этого мира ! Я столько всего хочу переделать !</div>
+			</div>
+			<div class="clearer"></div>
+			<div class="postfootleft"><p>Неактивен</p></div>
+			<div class="postfootright"><div>&nbsp;</div></div>
+		</div>
+	</div>
+</div>
+
+<div id="p8681" class="blockpost roweven">
+	<h2><span><span class="conr">#6&nbsp;</span><a href="viewtopic.php?pid=8681#p8681">2008-02-05 14:45:24</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postleft">
+				<dl>
+					<dt><strong><a href="profile.php?id=8836">Xameleon</a></strong></dt>
+					<dd class="usertitle"><strong>Модератор</strong></dd>
+					<dd class="postavatar"></dd>
+				</dl>
+			</div>
+			<div class="postright">
+				<h3> Re: VBScript: заполнение Web-форм</h3>
+				<div class="postmsg">
+					<p><strong>(!) Внимание</strong> В класс внесено существенное исправление функции кодирования данных полей. Ранее не ASCII символы отправлялись неверно.</p>
+				</div>
+				<div class="postsignature"><hr />Господи, дай мне исходники этого мира ! Я столько всего хочу переделать !</div>
+			</div>
+			<div class="clearer"></div>
+			<div class="postfootleft"><p>Неактивен</p></div>
+			<div class="postfootright"><div>&nbsp;</div></div>
+		</div>
+	</div>
+</div>
+
+<div class="postlinksb">
+	<div class="inbox">
+		<p class="postlink conr">&nbsp;</p>
+		<p class="pagelink conl">Страниц: <strong>1</strong></p>
+		<ul><li><a href="index.php">Список</a></li><li>&nbsp;&raquo;&nbsp;Коллекция скриптов и идей</li><li>&nbsp;&raquo;&nbsp;<a href="viewforum.php?id=5">Windows Script Host, HTA (VBScript, JScript)</a></li><li>&nbsp;&raquo;&nbsp;<a href="viewtopic.php?id=158">VBScript: заполнение Web-форм</a></li></ul>
+		<div class="clearer"></div>
+	</div>
+</div>
+
+<div id="brdfooter" class="block">
+	<h2><span>Board footer</span></h2>
+	<div class="box">
+		<div class="inbox">
+
+			<div class="conl">
+				<form id="qjump" method="get" action="viewforum.php">
+					<div><label>Перейти
+					<br /><select name="id" onchange="window.location=('viewforum.php?id='+this.options[this.selectedIndex].value)">
+						<optgroup label="Общение">
+							<option value="25">Важная информация</option>
+							<option value="13">AutoHotkey</option>
+							<option value="14">Windows Script Host, HTA (VBScript, JScript)</option>
+							<option value="15">AutoIt</option>
+							<option value="16">Python</option>
+							<option value="17">VBA (Visual Basic for Applications)</option>
+							<option value="18">CMD/BAT</option>
+							<option value="19">ASP (Active Server Pages)</option>
+							<option value="20">PHP</option>
+							<option value="21">JavaScript (браузерный)</option>
+							<option value="24">Windows PowerShell</option>
+							<option value="22">Прочие скриптовые технологии и близкие к ним</option>
+							<option value="8">Script-Coding.com community</option>
+						</optgroup>
+						<optgroup label="Коллекция скриптов и идей">
+							<option value="2">AutoHotkey</option>
+							<option value="5" selected="selected">Windows Script Host, HTA (VBScript, JScript)</option>
+							<option value="12">CMD/BAT</option>
+							<option value="6">Python</option>
+							<option value="10">Shell скрипты Linux</option>
+							<option value="7">Прочее (Реестр, 1С, текстовые редакторы и т.д.)</option>
+					</optgroup>
+					</select>
+					<input type="submit" value=" Перейти " accesskey="g" />
+					</label></div>
+				</form>
+			</div>
+			<p class="conr">Powered by <a href="http://www.punbb.org/">PunBB</a><br />&copy; Copyright 2002&#8211;2005 Rickard Andersson</p>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
