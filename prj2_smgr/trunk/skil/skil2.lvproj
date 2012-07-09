@@ -38,6 +38,7 @@
 				<Item Name="splash.ini" Type="Document" URL="../7_1/splash/splash.ini"/>
 				<Item Name="Untitled_.vi" Type="VI" URL="../7_1/splash/Untitled_.vi"/>
 				<Item Name="v2mv.vi" Type="VI" URL="../7_1/splash/v2mv.vi"/>
+				<Item Name="get_buf2.vi" Type="VI" URL="../7_1/splash/get_buf2.vi"/>
 			</Item>
 			<Item Name="calc5.vi" Type="VI" URL="../7_1/calc5.vi"/>
 			<Item Name="client.ini" Type="Document" URL="../7_1/client.ini"/>
@@ -68,8 +69,13 @@
 		<Item Name="add10_04_2012" Type="Folder" URL="../add10_04_2012">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="intercom" Type="Folder" URL="../intercom">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="PDview.ico" Type="Document" URL="../PDview.ico"/>
 		<Item Name="index.htm" Type="Document" URL="../index.htm"/>
+		<Item Name="conv2mv.vi" Type="VI" URL="../7_1/splash/conv2mv.vi"/>
+		<Item Name="xz2mv.vi" Type="VI" URL="../7_1/splash/xz2mv.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
@@ -217,6 +223,11 @@
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="Error to Warning.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error to Warning.vi"/>
+				<Item Name="TCP Listen.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen.vi"/>
+				<Item Name="Internecine Avoider.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/Internecine Avoider.vi"/>
+				<Item Name="TCP Listen List Operations.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen List Operations.ctl"/>
+				<Item Name="TCP Listen Internal List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen Internal List.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niScope vertical coupling.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope vertical coupling.ctl"/>
