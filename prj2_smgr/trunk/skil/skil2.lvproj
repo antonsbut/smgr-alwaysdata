@@ -39,6 +39,8 @@
 				<Item Name="Untitled_.vi" Type="VI" URL="../7_1/splash/Untitled_.vi"/>
 				<Item Name="v2mv.vi" Type="VI" URL="../7_1/splash/v2mv.vi"/>
 				<Item Name="get_buf2.vi" Type="VI" URL="../7_1/splash/get_buf2.vi"/>
+				<Item Name="conv2mv.vi" Type="VI" URL="../7_1/splash/conv2mv.vi"/>
+				<Item Name="xz2mv.vi" Type="VI" URL="../7_1/splash/xz2mv.vi"/>
 			</Item>
 			<Item Name="calc5.vi" Type="VI" URL="../7_1/calc5.vi"/>
 			<Item Name="client.ini" Type="Document" URL="../7_1/client.ini"/>
@@ -74,8 +76,6 @@
 		</Item>
 		<Item Name="PDview.ico" Type="Document" URL="../PDview.ico"/>
 		<Item Name="index.htm" Type="Document" URL="../index.htm"/>
-		<Item Name="conv2mv.vi" Type="VI" URL="../7_1/splash/conv2mv.vi"/>
-		<Item Name="xz2mv.vi" Type="VI" URL="../7_1/splash/xz2mv.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
