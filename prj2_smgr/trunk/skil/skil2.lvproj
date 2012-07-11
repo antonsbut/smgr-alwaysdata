@@ -74,6 +74,9 @@
 		<Item Name="intercom" Type="Folder" URL="../intercom">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="filters_4_new_SMGR" Type="Folder" URL="../../filters_4_new_SMGR">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="PDview.ico" Type="Document" URL="../PDview.ico"/>
 		<Item Name="index.htm" Type="Document" URL="../index.htm"/>
 		<Item Name="Dependencies" Type="Dependencies">
