@@ -36,7 +36,6 @@
 				<Item Name="lasttime.txt" Type="Document" URL="../7_1/splash/lasttime.txt"/>
 				<Item Name="splash.htm" Type="Document" URL="../7_1/splash/splash.htm"/>
 				<Item Name="splash.ini" Type="Document" URL="../7_1/splash/splash.ini"/>
-				<Item Name="Untitled_.vi" Type="VI" URL="../7_1/splash/Untitled_.vi"/>
 				<Item Name="v2mv.vi" Type="VI" URL="../7_1/splash/v2mv.vi"/>
 				<Item Name="get_buf2.vi" Type="VI" URL="../7_1/splash/get_buf2.vi"/>
 				<Item Name="conv2mv.vi" Type="VI" URL="../7_1/splash/conv2mv.vi"/>
@@ -68,6 +67,7 @@
 			<Item Name="splash.vi" Type="VI" URL="../7_1/splash/splash.vi"/>
 			<Item Name="skil3.vi" Type="VI" URL="../skil3.vi"/>
 			<Item Name="Untitled 1.vi" Type="VI" URL="../Untitled 1.vi"/>
+			<Item Name="Korona2012.vi" Type="VI" URL="../7_1/splash/Korona2012.vi"/>
 		</Item>
 		<Item Name="add10_04_2012" Type="Folder" URL="../add10_04_2012">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
@@ -76,6 +76,9 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="filters_4_new_SMGR" Type="Folder" URL="../../filters_4_new_SMGR">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="math" Type="Folder" URL="../math">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="PDview.ico" Type="Document" URL="../PDview.ico"/>
