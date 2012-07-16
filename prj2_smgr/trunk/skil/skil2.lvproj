@@ -40,6 +40,7 @@
 				<Item Name="get_buf2.vi" Type="VI" URL="../7_1/splash/get_buf2.vi"/>
 				<Item Name="conv2mv.vi" Type="VI" URL="../7_1/splash/conv2mv.vi"/>
 				<Item Name="xz2mv.vi" Type="VI" URL="../7_1/splash/xz2mv.vi"/>
+				<Item Name="test_drv.vi" Type="VI" URL="../7_1/splash/test_drv.vi"/>
 			</Item>
 			<Item Name="calc5.vi" Type="VI" URL="../7_1/calc5.vi"/>
 			<Item Name="client.ini" Type="Document" URL="../7_1/client.ini"/>
@@ -67,7 +68,7 @@
 			<Item Name="splash.vi" Type="VI" URL="../7_1/splash/splash.vi"/>
 			<Item Name="skil3.vi" Type="VI" URL="../skil3.vi"/>
 			<Item Name="Untitled 1.vi" Type="VI" URL="../Untitled 1.vi"/>
-			<Item Name="Korona2012.vi" Type="VI" URL="../7_1/splash/Korona2012.vi"/>
+			<Item Name="korona2012.vi" Type="VI" URL="../korona2012.vi"/>
 		</Item>
 		<Item Name="add10_04_2012" Type="Folder" URL="../add10_04_2012">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
@@ -427,6 +428,41 @@
 				<Property Name="TgtF_productName" Type="Str">splash</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{3B13C5BB-8CFB-4FE6-87D7-1B122DAEAB60}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">rgpn.exe</Property>
+			</Item>
+			<Item Name="My DLL" Type="DLL">
+				<Property Name="App_INI_aliasGUID" Type="Str">{2608C01E-E7B2-47A3-83FB-2F9AC16257FE}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{4C8D0A2D-11D9-43F9-93B0-E3AA12C7A3BD}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">My DLL</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../skil/My Application/data</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Destination[0].destName" Type="Str">SharedLib.dll</Property>
+				<Property Name="Destination[0].path" Type="Path">../skil/My Application/data/SharedLib.dll</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../skil/My Application/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Dll_delayOSMsg" Type="Bool">true</Property>
+				<Property Name="Dll_headerGUID" Type="Str">{546E8A39-4337-4503-818A-06C9A62B95F7}</Property>
+				<Property Name="Dll_libGUID" Type="Str">{7396015F-E3C9-442F-B542-F751E771B7BD}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2BF83A23-8DE9-438A-B472-D8B37B7B5513}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/math/bsearch11.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">ExportedVI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">My DLL</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">My DLL</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
+				<Property Name="TgtF_productName" Type="Str">My DLL</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{771F5A39-50E3-412B-9054-F73886042733}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">SharedLib.dll</Property>
 			</Item>
 		</Item>
 	</Item>
