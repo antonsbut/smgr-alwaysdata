@@ -55,7 +55,6 @@
 			<Item Name="save_bin2.vi" Type="VI" URL="../7_1/save_bin2.vi"/>
 			<Item Name="scil_reg2.vi" Type="VI" URL="../7_1/scil_reg2.vi"/>
 			<Item Name="scope1.vi" Type="VI" URL="../7_1/scope1.vi"/>
-			<Item Name="shed.txt" Type="Document" URL="../7_1/shed.txt"/>
 			<Item Name="Untitled.vi" Type="VI" URL="../7_1/Untitled.vi"/>
 			<Item Name="err_log.vi" Type="VI" URL="../7_1/err_log.vi"/>
 			<Item Name="read_log.vi" Type="VI" URL="../7_1/read_log.vi"/>
@@ -84,6 +83,14 @@
 		</Item>
 		<Item Name="PDview.ico" Type="Document" URL="../PDview.ico"/>
 		<Item Name="index.htm" Type="Document" URL="../index.htm"/>
+		<Item Name="contents.htm" Type="Document" URL="../contents.htm"/>
+		<Item Name="err.htm" Type="Document" URL="../err.htm"/>
+		<Item Name="ini.htm" Type="Document" URL="../ini.htm"/>
+		<Item Name="obrab.htm" Type="Document" URL="../obrab.htm"/>
+		<Item Name="post.htm" Type="Document" URL="../post.htm"/>
+		<Item Name="qw.htm" Type="Document" URL="../qw.htm"/>
+		<Item Name="read_me1st.txt" Type="Document" URL="../read_me1st.txt"/>
+		<Item Name="адреса.txt" Type="Document" URL="../адреса.txt"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
@@ -359,23 +366,24 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="My Application" Type="EXE">
+			<Item Name="skil2" Type="EXE">
 				<Property Name="App_INI_aliasGUID" Type="Str">{C1050487-45C7-4714-9243-8D2CF29AD6EF}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{DBCF5280-7481-4A96-9F46-84A6BD3A3949}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">My Application</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">skil2</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../skill/My Application</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../skil/My Application</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Destination[0].destName" Type="Str">skil2.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../skill/My Application/NI_AB_PROJECTNAME.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../skil/My Application/NI_AB_PROJECTNAME.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../skill/My Application/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../skil/My Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PDview.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0E4C8B9E-98F1-45AA-BDA8-559C26A56231}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7FE28759-5C7A-44B0-A1BE-5D39606865AF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/skil2.vi</Property>
@@ -384,12 +392,12 @@
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">NSTU</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">My Application</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">18</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">skil2</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">20</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
-				<Property Name="TgtF_internalName" Type="Str">My Application</Property>
+				<Property Name="TgtF_internalName" Type="Str">skil2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 NSTU</Property>
-				<Property Name="TgtF_productName" Type="Str">My Application</Property>
+				<Property Name="TgtF_productName" Type="Str">skil2</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{D7A9C3DD-D47B-4570-B120-8DFF13A93133}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">skil2.exe</Property>
 			</Item>
@@ -400,18 +408,18 @@
 				<Property Name="Bld_buildSpecName" Type="Str">splash</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../skill/My Application</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../skil/My Application</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Destination[0].destName" Type="Str">rgpn.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../skill/My Application/rgpn.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../skil/My Application/rgpn.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../skill/My Application/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../skil/My Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PDview.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A82C3F2A-BED0-49E4-8503-A1362D4771F1}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A908A2C6-E0EF-4BEC-B750-180ED559C6DE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/splash.vi</Property>
@@ -432,6 +440,7 @@
 			<Item Name="rgpn2" Type="EXE">
 				<Property Name="App_INI_aliasGUID" Type="Str">{EC50460D-514D-43F3-B741-9CC7D979892F}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{48ADF2EC-879E-459C-967D-110361450D9E}</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">Регистратор грозовых перенапряжений и коронных разрядов - 2.</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">rgpn2</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
@@ -446,7 +455,7 @@
 				<Property Name="Destination[1].path" Type="Path">../skil/My Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PDview.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D435DCCA-28A3-4C22-B814-55838DCBDC57}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7FE28759-5C7A-44B0-A1BE-5D39606865AF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/skil3.vi</Property>
@@ -461,6 +470,44 @@
 				<Property Name="Source[1].propertiesCount" Type="Int">4</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/index.htm</Property>
+				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/contents.htm</Property>
+				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/My Computer/err.htm</Property>
+				<Property Name="Source[12].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/My Computer/ini.htm</Property>
+				<Property Name="Source[13].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/My Computer/obrab.htm</Property>
+				<Property Name="Source[14].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[15].itemID" Type="Ref">/My Computer/post.htm</Property>
+				<Property Name="Source[15].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/My Computer/qw.htm</Property>
+				<Property Name="Source[16].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[17].itemID" Type="Ref">/My Computer/lib/allpaths.vi</Property>
+				<Property Name="Source[17].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[17].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[17].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[17].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[17].properties[2].type" Type="Str">Show horizontal scroll bar</Property>
+				<Property Name="Source[17].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[17].properties[3].type" Type="Str">Show vertical scroll bar</Property>
+				<Property Name="Source[17].properties[3].value" Type="Bool">false</Property>
+				<Property Name="Source[17].properties[4].type" Type="Str">Show toolbar</Property>
+				<Property Name="Source[17].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[17].properties[5].type" Type="Str">Show fp when called</Property>
+				<Property Name="Source[17].properties[5].value" Type="Bool">true</Property>
+				<Property Name="Source[17].properties[6].type" Type="Str">Show Abort button</Property>
+				<Property Name="Source[17].properties[6].value" Type="Bool">false</Property>
+				<Property Name="Source[17].propertiesCount" Type="Int">7</Property>
+				<Property Name="Source[17].type" Type="Str">VI</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/lib/files_to_sent.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
@@ -521,11 +568,11 @@
 				<Property Name="Source[9].properties[1].value" Type="Bool">false</Property>
 				<Property Name="Source[9].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">10</Property>
+				<Property Name="SourceCount" Type="Int">18</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">7</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">18</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
