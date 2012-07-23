@@ -25,46 +25,14 @@
 		<Item Name="100_ToSkil3" Type="Folder" URL="../100_ToSkil3">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="7_1" Type="Folder">
-			<Item Name="contr_lib.llb" Type="Folder">
-				<Item Name="is_exe.vi" Type="VI" URL="../7_1/contr_lib.llb/is_exe.vi"/>
-				<Item Name="RunVi.vi" Type="VI" URL="../7_1/contr_lib.llb/RunVi.vi"/>
-			</Item>
-			<Item Name="splash" Type="Folder">
-				<Item Name="get_buf.vi" Type="VI" URL="../7_1/splash/get_buf.vi"/>
-				<Item Name="gmail71.vi" Type="VI" URL="../7_1/splash/gmail71.vi"/>
-				<Item Name="splash.htm" Type="Document" URL="../7_1/splash/splash.htm"/>
-				<Item Name="splash.ini" Type="Document" URL="../7_1/splash/splash.ini"/>
-				<Item Name="v2mv.vi" Type="VI" URL="../7_1/splash/v2mv.vi"/>
-				<Item Name="get_buf2.vi" Type="VI" URL="../7_1/splash/get_buf2.vi"/>
-				<Item Name="conv2mv.vi" Type="VI" URL="../7_1/splash/conv2mv.vi"/>
-				<Item Name="xz2mv.vi" Type="VI" URL="../7_1/splash/xz2mv.vi"/>
-				<Item Name="test_drv.vi" Type="VI" URL="../7_1/splash/test_drv.vi"/>
-			</Item>
-			<Item Name="calc5.vi" Type="VI" URL="../7_1/calc5.vi"/>
-			<Item Name="client.ini" Type="Document" URL="../7_1/client.ini"/>
-			<Item Name="client.rtm" Type="Document" URL="../7_1/client.rtm"/>
-			<Item Name="client.vi" Type="VI" URL="../7_1/client.vi"/>
-			<Item Name="get_nearest.vi" Type="VI" URL="../7_1/get_nearest.vi"/>
-			<Item Name="get_plugins.vi" Type="VI" URL="../7_1/get_plugins.vi"/>
-			<Item Name="glob1.vi" Type="VI" URL="../7_1/glob1.vi"/>
-			<Item Name="new_gain.vi" Type="VI" URL="../7_1/new_gain.vi"/>
-			<Item Name="plugin_call.vi" Type="VI" URL="../7_1/plugin_call.vi"/>
-			<Item Name="read_bin.vi" Type="VI" URL="../7_1/read_bin.vi"/>
-			<Item Name="save_bin.vi" Type="VI" URL="../7_1/save_bin.vi"/>
-			<Item Name="save_bin2.vi" Type="VI" URL="../7_1/save_bin2.vi"/>
-			<Item Name="scil_reg2.vi" Type="VI" URL="../7_1/scil_reg2.vi"/>
-			<Item Name="scope1.vi" Type="VI" URL="../7_1/scope1.vi"/>
-			<Item Name="Untitled.vi" Type="VI" URL="../7_1/Untitled.vi"/>
-			<Item Name="err_log.vi" Type="VI" URL="../7_1/err_log.vi"/>
-			<Item Name="read_log.vi" Type="VI" URL="../7_1/read_log.vi"/>
+		<Item Name="7_1" Type="Folder" URL="../7_1">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="lib" Type="Folder" URL="../lib">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="top_vi" Type="Folder">
 			<Item Name="skil2.vi" Type="VI" URL="../skil2.vi"/>
-			<Item Name="splash.vi" Type="VI" URL="../7_1/splash/splash.vi"/>
 			<Item Name="skil3.vi" Type="VI" URL="../skil3.vi"/>
 			<Item Name="Untitled 1.vi" Type="VI" URL="../Untitled 1.vi"/>
 			<Item Name="korona2012.vi" Type="VI" URL="../korona2012.vi"/>
@@ -346,6 +314,8 @@
 				<Item Name="niSync Set Time Reference (GPS).vi" Type="VI" URL="/&lt;instrlib&gt;/niSync/niSync.llb/niSync Set Time Reference (GPS).vi"/>
 				<Item Name="niSync Set Time Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/niSync/niSync.llb/niSync Set Time Reference.vi"/>
 				<Item Name="niScope Commit.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope Commit.vi"/>
+				<Item Name="niSync Reset.vi" Type="VI" URL="/&lt;instrlib&gt;/niSync/niSync.llb/niSync Reset.vi"/>
+				<Item Name="niScope Reset Device.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope Reset Device.vi"/>
 			</Item>
 			<Item Name="niScope_32.dll" Type="Document" URL="niScope_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -422,7 +392,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{A908A2C6-E0EF-4BEC-B750-180ED559C6DE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/splash.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/7_1/splash/splash.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
@@ -572,7 +542,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">19</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">20</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
