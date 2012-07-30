@@ -36,6 +36,7 @@
 			<Item Name="skil3.vi" Type="VI" URL="../skil3.vi"/>
 			<Item Name="Untitled 1.vi" Type="VI" URL="../Untitled 1.vi"/>
 			<Item Name="korona2012.vi" Type="VI" URL="../korona2012.vi"/>
+			<Item Name="TDMS-File Viewer.vi" Type="VI" URL="../TDMS-File Viewer.vi"/>
 		</Item>
 		<Item Name="add10_04_2012" Type="Folder" URL="../add10_04_2012">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
@@ -59,6 +60,7 @@
 		<Item Name="qw.htm" Type="Document" URL="../qw.htm"/>
 		<Item Name="read_me1st.txt" Type="Document" URL="../read_me1st.txt"/>
 		<Item Name="адреса.txt" Type="Document" URL="../адреса.txt"/>
+		<Item Name="todo.txt" Type="Document" URL="../todo.txt"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
@@ -542,7 +544,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">23</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">24</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
