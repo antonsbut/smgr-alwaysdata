@@ -432,7 +432,7 @@
 				<Property Name="Destination[1].path" Type="Path">../skil/My Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PDview.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7FE28759-5C7A-44B0-A1BE-5D39606865AF}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2AC5DE66-BCB9-40FE-9DFE-6C6CB4577F66}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/skil3.vi</Property>
@@ -549,7 +549,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">32</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">35</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
