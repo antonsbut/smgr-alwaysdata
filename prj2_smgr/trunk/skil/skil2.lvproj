@@ -432,7 +432,7 @@
 				<Property Name="Destination[1].path" Type="Path">../skil/My Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PDview.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2AC5DE66-BCB9-40FE-9DFE-6C6CB4577F66}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CF48A831-B94F-47A0-89FF-16EFD54B7B74}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/skil3.vi</Property>
@@ -485,6 +485,13 @@
 				<Property Name="Source[17].properties[6].value" Type="Bool">false</Property>
 				<Property Name="Source[17].propertiesCount" Type="Int">7</Property>
 				<Property Name="Source[17].type" Type="Str">VI</Property>
+				<Property Name="Source[18].itemID" Type="Ref">/My Computer/intercom/write_files_01.vi</Property>
+				<Property Name="Source[18].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[18].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[18].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[18].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[18].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[18].type" Type="Str">VI</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/lib/files_to_sent.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
@@ -545,11 +552,11 @@
 				<Property Name="Source[9].properties[1].value" Type="Bool">false</Property>
 				<Property Name="Source[9].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">18</Property>
+				<Property Name="SourceCount" Type="Int">19</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">45</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">48</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
