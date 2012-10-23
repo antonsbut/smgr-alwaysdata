@@ -556,7 +556,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">50</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">51</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
