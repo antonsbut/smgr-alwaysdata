@@ -1,0 +1,15 @@
+Про субвершен
+
+http://www.svnhostingcomparison.com/ - там много разных и можно выбрать что нужно
+
+Выбрано было вот что ProjectLocker
+https://portal.projectlocker.com/user/home
+
+user: smgr.alwaysdata@gmail.com
+password: skil2123
+
+user: andray-l-s@ngs.ru
+password: skil2123
+
+папка с проектом
+https://pl3.projectlocker.com/smgr/svn
