@@ -1,0 +1,6 @@
+http://lavag.org/topic/10751-splitting-string-sentence/
+как разбить текст на строки и на слова. 
+разные способы 
+
+плюс ссылка на сайт по регклярным выражениям
+http://www.regular-expressions.info/
