@@ -1,0 +1,24 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>10.0</Version>
+<Cluster>
+<Name></Name>
+<NumElts>3</NumElts>
+<I32>
+<Name>DevNo</Name>
+<Val>10</Val>
+</I32>
+<String>
+<Name>Cmd</Name>
+<Val>settings</Val>
+</String>
+<String>
+<Name>Param</Name>
+<Val>show</Val>
+</String>
+</Cluster>
+<String>
+<Name>date/time string</Name>
+<Val>2013-04-21 06:11:19</Val>
+</String>
+</LVData>
