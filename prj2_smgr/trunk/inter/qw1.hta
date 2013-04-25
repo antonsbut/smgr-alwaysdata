@@ -47,7 +47,7 @@ end function
 '--------------------------------------------------------------------------
 sub docmd(cmd)
  set ex=oshell.Exec(cmd)
- mf.value = d2w(ex.StdOut)&d2w(ex.StdErr)
+ mf.value = d2w(ex.StdOut) & d2w(ex.StdErr)
  set ex=nothing
 end sub
 '--------------------------------------------------------------------------
@@ -108,10 +108,10 @@ sub vals_change
 end sub
 '--------------------------------------------------------------------------
 sub save_ini
- msg="“очно перезаписать" & vbcrlf & params("qwini") & "?"
+ msg="“очно перезаписать" & vbcrlf & qwini.value & "?"
  if vbYes=MsgBox(msg,vbYesNo,"—охранение настроек") then
  'oshell.CurrentDirectory=mid(document.url,8,instrrev(document.url,"\")-8)
-  set ofile=fso.CreateTextFile(params("qwini"),true)
+  set ofile=fso.CreateTextFile(qwini.value,true)
   ofile.Write mf.value
   ofile.Close
   set ofile=nothing
@@ -185,10 +185,10 @@ end sub
 <table><tr valign="top">
 <td align="center">
 <button onclick="info_q" title="проверить в расписании">info</button><br>
-<button onclick="read_ini" title="посмотреть\редактировать настройки">qw.ini</button><br>
+<button onclick="read_ini" title="посмотреть\редактировать настройки">qwini</button><br>
 <button onclick="execSQL" title="запрос о времени в Ѕƒ">UDL</button><br>
 <button onclick="save_ini" title="сохранить настройки">save</button><br>
-<button onclick="setup_q" title="вставить qw.vbs в расписание">setup</button><br>
+<button onclick="setup_q" title="вставить qw в расписание">setup</button><br>
 <button onclick="run_q" title="выполнить запланированное">&nbsp;run&nbsp;</button><br>
 <button onclick="stop_qw" title="удалить из расписани€">stop</button>
 </td>
