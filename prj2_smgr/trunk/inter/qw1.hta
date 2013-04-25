@@ -1,0 +1,204 @@
+<html><head>
+<title>Настройка watchdog-a</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251">
+<meta name=vs_targetSchema content="HTML 4.0">
+
+<script language="vbs">
+'--------------------------------------------------------------------------
+k = "АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя"
+set oshell=CreateObject("WScript.Shell")
+set fso=CreateObject("Scripting.FileSystemObject")
+set oc=CreateObject("ADODB.Connection")
+Const ForReading = 1 
+Const ForWriting = 2 
+Const ForAppending = 8 
+bq = chr(34)
+xp = true
+user = oshell.ExpandEnvironmentStrings("%username%")
+dim comsect
+set params=CreateObject("Scripting.Dictionary")
+'--------------------------------------------------------------------------
+function p2s(dic)
+ p2s=""
+ dk=dic.Keys
+ di=dic.Items
+ for i=0 to dic.Count-1
+  if isnumeric(di(i)) then
+   p2s = p2s & dk(i) & "=" & di(i) & vbcrlf
+  else
+   p2s = p2s & dk(i) & "=" & bq & di(i) & bq & vbcrlf
+  end if
+ next
+end function
+'--------------------------------------------------------------------------
+function d2w(stream)
+d2w=""
+do until stream.AtEndOfStream
+ c=stream.Read(1)
+ n=asc(c)
+ if n>=224 and n<=239 then c=mid(k,n-175,1)
+ if n>=128 and n<=175 then c=mid(k,n-127,1)
+ if n=240 then c="Ё"
+ if n=241 then c="ё"
+ if n=255 then c=vbtab
+ d2w = d2w & c
+loop
+end function
+'--------------------------------------------------------------------------
+sub docmd(cmd)
+ set ex=oshell.Exec(cmd)
+ mf.value = d2w(ex.StdOut)&d2w(ex.StdErr)
+ set ex=nothing
+end sub
+'--------------------------------------------------------------------------
+sub info_q
+ if xp then
+  docmd("schtasks.exe /query")
+ else
+  docmd("schtasks.exe /query /tn watchdog")
+ end if
+end sub
+'--------------------------------------------------------------------------
+sub stop_qw
+ docmd("schtasks /delete /tn watchdog /f")
+end sub
+'--------------------------------------------------------------------------
+sub run_q
+ docmd("schtasks /run /tn watchdog")
+end sub
+'--------------------------------------------------------------------------
+sub setup_q
+ call stop_qw
+ delval = cint(params.Item("delval"))
+ path = params.Item("qw") 'mid(document.url,8,instrrev(document.url,"\")-7) & "qw.vbs"
+ if xp then
+  if psw.value="" then 
+   alert("Нужен пароль!")
+  else
+   msg="schtasks /create /ru " & user & " /rp " & psw.value &_
+       " /sc minute /mo " & (delval+1) & " /tn watchdog /tr " &_
+       bq & path & bq
+' alert msg
+   docmd(msg)
+  end if
+ else
+  msg ="schtasks /create /sc minute /mo " & (delval+1) & " /tn watchdog /tr " &_
+       bq & "'" & path & "'" & bq
+  docmd(msg)
+ end if
+end sub
+'--------------------------------------------------------------------------
+sub inner_ch(obj)
+ params.Item(obj.id)=obj.value
+ call vals_change
+end sub
+'--------------------------------------------------------------------------
+sub other_ini_ch
+ params.Item("ini")=other_ini.value
+ set ofile=fso.OpenTextFile(other_ini.value,ForReading)
+ msg=ofile.ReadAll()
+ oini.innerHTML="<pre>" & msg & "</pre>" 
+ ofile.Close
+ set ofile=nothing
+ call vals_change
+end sub
+'--------------------------------------------------------------------------
+sub vals_change
+ mf.value = comsect & p2s(params)
+end sub
+'--------------------------------------------------------------------------
+sub save_ini
+ msg="Точно перезаписать" & vbcrlf & params("qwini") & "?"
+ if vbYes=MsgBox(msg,vbYesNo,"Сохранение настроек") then
+ 'oshell.CurrentDirectory=mid(document.url,8,instrrev(document.url,"\")-8)
+  set ofile=fso.CreateTextFile(params("qwini"),true)
+  ofile.Write mf.value
+  ofile.Close
+  set ofile=nothing
+ end if
+end sub
+'--------------------------------------------------------------------------
+sub read_ini
+ on error resume next
+ comsect=""
+ path=qwini.value
+ params.RemoveAll()
+ params.Item("delval")=1
+ params.Item("wndname")="---"
+ 'oshell.CurrentDirectory=mid(document.url,8,instrrev(document.url,"\")-8)
+ set ofile=fso.OpenTextFile(path,ForReading)
+ if Err.number=0 then 
+ do until ofile.AtEndOfStream
+  msg=ofile.ReadLine()
+  del=instr(msg,"=")
+  if del=0 and len(msg)<>0 then
+   comsect = comsect & msg & vbcrlf
+  else
+   val = split(mid(msg,del+1),bq)
+   if ubound(val)=0 then
+    pr = val(0)
+   else
+    pr = val(1)
+   end if
+   val = trim(pr)
+   pr = trim(lcase(left(msg,del-1)))
+   params.Item(pr) = val
+  end if
+ loop
+ ofile.Close
+ set ofile=nothing
+ else
+  'qwini.click
+  alert "Файл (qwini) не задан!"
+ end if
+ call vals_change
+end sub
+'--------------------------------------------------------------------------
+sub execSQL
+ dim datafile
+ datafile = params.Item("datafile")
+ if datafile="" then exit sub
+ if lcase(mid(datafile,instrrev(datafile,".")))=".udl" then
+  oshell.CurrentDirectory=left(datafile,instrrev(datafile,chr(92))-1)
+  oc.ConnectionString = "file name=" & datafile
+  oc.Open()
+  set rs=oc.Execute("select max(dateandtime) from justvalues")
+  mf.value=rs.fields(0).value
+  oc.Close()
+ else
+  alert "Нужен UDL (datafile=`*.udl`)"
+ end if
+end sub
+'--------------------------------------------------------------------------
+sub init
+ docmd("cmd /C ver")
+ if instr(1,mf.value,"XP",vbTextCompare)=0 then xp=false
+ if xp then ro.innerHTML="user: " & user & ", пароль: <input type=password name=psw>"
+end sub
+'--------------------------------------------------------------------------
+</script>
+</head>
+<body onload="init">
+<div id="ro" ></div>
+Кто следит(qw): <input type="file" id="qw" size=70 onchange="inner_ch(qw)"><br>
+его настройки(qwini): <input type="file" id="qwini" size=70>
+<table><tr valign="top">
+<td align="center">
+<button onclick="info_q" title="проверить в расписании">info</button><br>
+<button onclick="read_ini" title="посмотреть\редактировать настройки">qw.ini</button><br>
+<button onclick="execSQL" title="запрос о времени в БД">UDL</button><br>
+<button onclick="save_ini" title="сохранить настройки">save</button><br>
+<button onclick="setup_q" title="вставить qw.vbs в расписание">setup</button><br>
+<button onclick="run_q" title="выполнить запланированное">&nbsp;run&nbsp;</button><br>
+<button onclick="stop_qw" title="удалить из расписания">stop</button>
+</td>
+<td>
+<textarea name="mf" cols=80 rows=15></textarea>
+</td>
+</tr></table>
+За чем следить(datafile):
+<input type="file" id="datafile" size=70 onchange="inner_ch(datafile)" title="DB"><br>
+Что выполнить(cmd): <input type="file" id="cmd" size=70 onchange="inner_ch(cmd)"><br>
+и его настройки(ini): <input type="file" name="other_ini" size=70 onchange="other_ini_ch">
+<div id="oini"></div>
+</body></html>
