@@ -1,0 +1,7 @@
+FTDIUN2K.INI - C:\WINDOWS\system32
+FTDIBUS.sys - C:\WINDOWS\system32\drivers
+ftser2k.sys - -//-
+FTBUSUI.dll - C:\WINDOWS\system32
+FTD2XX.dll - -//-
+FTLang.dll - -//-
+ftserui2.dll - -//-
