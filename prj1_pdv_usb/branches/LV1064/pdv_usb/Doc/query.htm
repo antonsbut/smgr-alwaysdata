@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<TITLE>SQL Explorer</TITLE>
+</HEAD>
+<BODY >
+<TABLE><TR>
+<TD valign="top"><iframe height="500" width="150" name="fr2"></iframe></TD>
+<TD valign="top"><form  name="f1">
+UDL: <input type="file" name="the_file" size="90">
+<input type="button" onclick="schema()" value="Таблицы"><br>
+SQL1: <input type="text" name="cmd1" size="100">
+<input type="button" onclick="mit(cmd1)" value="Execute"><br>
+SQL2: <input type="text" name="cmd2" size="100">
+<input type="button" onclick="mit(cmd2)" value="Execute">
+</form>
+<iframe width="750" height="300" name="fr1"></iframe>
+<form name="e_rr">
+<input type="text" id=Text0 size="60"><br>
+<input type="text" ID=Text1 size="80">
+<input type="text" ID=Text2><br>
+<input type="text" ID=Text3 size="80">
+<input type="text" ID=Text4>
+</form>
+</TD></TR></TABLE>
+
+<script language="vbscript">
+set oc=createobject("ADODB.Connection")
+pth=extractPath(mid(window.document.URL,8))
+'--------------------------------------------------------------
+sub schema()
+ on error resume next
+ oc.ConnectionString = "file name=" & f1.the_file.value
+ oc.Open()
+ set sh=oc.OpenSchema(20)
+ show_err()
+  with parent.frames("fr2").document
+   .clear
+   .writeln "<html><body>"
+   do until sh.eof
+    .writeln "<nobr>" & sh.fields("TABLE_NAME").value & "<br>"
+    sh.movenext
+   loop
+   .writeln "</body></html>"
+   .close
+  end with
+ sh.close()
+ oc.Close()  
+end sub
+'--------------------------------------------------------------
+sub mit(cmd)
+ on error resume next
+ oc.ConnectionString = "file name=" & f1.the_file.value
+ oc.Open()
+ set rs=oc.Execute(cmd.value)
+ show_err()
+ with parent.frames("fr1").document
+  .clear
+  .writeln "<html><body>"
+  call rs2table(rs,parent.frames("fr1").document)
+  .writeln "</body></html>"
+  .close
+ end with 
+ rs.Close()
+ oc.Close()
+end sub
+'--------------------------------------------------------------
+sub show_err()
+ with e_rr
+  .text1.value = err.Description
+  .text4.value = err.HelpContext
+  .text3.value = err.helpfile
+  .text2.value = err.number
+  .text0.value = err.Source
+ end with
+end sub
+'--------------------------------------------------------------
+sub rs2table(rs,doc)
+doc.write "<table border=2><tr>"
+for i=0 to (rs.fields.count-1)
+ doc.write "<th>" & rs.fields.item(i).name & "</th>"
+next
+doc.write "</tr>"
+while not rs.eof
+ doc.write "<tr>"
+ for i=0 to (rs.fields.count-1)
+  val=rs.fields.item(i).value
+  if isnull(val) then val="&nbsp;" 
+  doc.write "<td>" & val & "</td>"
+ next
+ doc.write "</tr>"
+ rs.movenext
+wend
+doc.write "</table>"
+end sub
+'--------------------------------------------------------------
+function extractPath(str)
+ str=strReverse(str)
+ str=mid(str,instr(1,str,"\"))
+ ExtractPath=strReverse(str)
+end function
+'--------------------------------------------------------------
+</script>
+
+</BODY>
+</HTML>
