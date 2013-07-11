@@ -432,8 +432,46 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../skil/My Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[0]" Type="Str">{EC682335-7BC5-4786-B6D5-866BD538C6FE}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[1]" Type="Str">{89C4FBAF-6703-4D22-9E09-22C024C0E982}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[10]" Type="Str">{4BCA5B2C-9C62-4513-A554-91271EE943C6}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[11]" Type="Str">{CA4D7F79-AB23-4F29-9411-478092CB2A74}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[12]" Type="Str">{442F9A3F-A6C9-4FCD-8F47-62A64A84D9CA}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[13]" Type="Str">{15482B95-AE39-4148-AD63-7FEB964183C0}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[14]" Type="Str">{6328AFA8-4556-4865-9DCF-F86DA343E9B6}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[15]" Type="Str">{F438743B-7EF1-4127-B40F-DA0389553133}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[16]" Type="Str">{877B9776-8D61-4F16-A292-78C50C19D102}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[2]" Type="Str">{3A3A3D32-9F91-4523-9C9D-835AFF34D574}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[3]" Type="Str">{A72AD254-175F-4455-A219-171D802F5E98}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[4]" Type="Str">{48D576CD-57B7-4973-98FA-547AF521E24C}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[5]" Type="Str">{420FFDA7-3603-4757-B24C-76A75AB73EB2}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[6]" Type="Str">{F8DC8E10-864C-4EB1-AA0D-840CCE9D8A59}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[7]" Type="Str">{48172A05-E7A6-4FC3-A90B-20498FB5F07A}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[8]" Type="Str">{D9180A8D-4B55-4BB0-92E3-BA102BE2D0EF}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[9]" Type="Str">{20AD62F4-3847-450A-A652-2165CDC5B8E2}</Property>
+				<Property Name="Exe_actXinfo_enumCLSIDsCount" Type="Int">17</Property>
+				<Property Name="Exe_actXinfo_majorVersion" Type="Int">5</Property>
+				<Property Name="Exe_actXinfo_minorVersion" Type="Int">5</Property>
+				<Property Name="Exe_actXinfo_objCLSID[0]" Type="Str">{7F401E08-2C52-42B5-9DB7-B6A6D8AD46DC}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[1]" Type="Str">{C6E9B7BF-BF6C-47A4-A745-6C34A4004F76}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[10]" Type="Str">{033D12D5-10EA-4E6B-9CFB-4169A43E0E16}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[11]" Type="Str">{94F70B0D-2EF5-4044-A19D-21C1CA9E8D12}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[12]" Type="Str">{8136D7DF-8897-4322-A0D8-926CBFFA62B4}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[13]" Type="Str">{22185EC5-D555-4E3D-A450-352F1B5696B3}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[2]" Type="Str">{4CF5841F-83C3-4020-98C2-E86F58EF41AF}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[3]" Type="Str">{515B6006-048B-4E7B-BA87-36236EAB60DE}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[4]" Type="Str">{664E939C-0F31-448C-B653-307AB17A77E8}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[5]" Type="Str">{1137A08D-15DF-4074-912D-515E0A74355A}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[6]" Type="Str">{BFEDC39A-1172-464A-ADDF-1EB6F0FEECF9}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[7]" Type="Str">{43326C48-3582-4F9B-AADD-C1C43BBFF3E1}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[8]" Type="Str">{B56ED5CE-2526-4047-8A3C-8199C2004851}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[9]" Type="Str">{5CC8F780-F305-4CA5-87DC-05AAEAB02206}</Property>
+				<Property Name="Exe_actXinfo_objCLSIDsCount" Type="Int">14</Property>
+				<Property Name="Exe_actXinfo_progIDPrefix" Type="Str">Rgpn2</Property>
+				<Property Name="Exe_actXServerName" Type="Str">Rgpn2</Property>
+				<Property Name="Exe_actXServerNameGUID" Type="Str">{8EAD8534-962C-4F36-9DDC-61BA2DFA3F31}</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PDview.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EEF6C523-BCB0-4EE6-81BF-5EF22716F55A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9FDF3109-A095-4918-898E-69A7AC780384}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/skil3.vi</Property>
@@ -557,7 +595,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">53</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">55</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
