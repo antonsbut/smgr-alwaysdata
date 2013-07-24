@@ -32,6 +32,7 @@
 		</Item>
 		<Item Name="Top_Vi" Type="Folder">
 			<Item Name="readrems.vi" Type="VI" URL="../readrems.vi"/>
+			<Item Name="testWDT.vi" Type="VI" URL="../testWDT.vi"/>
 		</Item>
 		<Item Name="1.txt" Type="Document" URL="../1.txt"/>
 		<Item Name="glu.ini" Type="Document" URL="../glu.ini"/>
@@ -98,9 +99,14 @@
 				<Item Name="Write to XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(string).vi"/>
 				<Item Name="Write to XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File.vi"/>
 			</Item>
+			<Item Name="InitWDT.vi" Type="VI" URL="../MatrixWDT.llb/InitWDT.vi"/>
 			<Item Name="is_exe.vi" Type="VI" URL="../../skil/7_1/contr_lib.llb/is_exe.vi"/>
 			<Item Name="loadcontrsval.vi" Type="VI" URL="../../skil/lib/loadcontrsval.vi"/>
-			<Item Name="ni_httpClient.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/ni_httpClient.dll"/>
+			<Item Name="ni_httpClient.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/ni_httpClient.dll"/>
+			<Item Name="ResetWDT.vi" Type="VI" URL="../MatrixWDT.llb/ResetWDT.vi"/>
+			<Item Name="SetWDT.vi" Type="VI" URL="../MatrixWDT.llb/SetWDT.vi"/>
+			<Item Name="StartWDT.vi" Type="VI" URL="../MatrixWDT.llb/StartWDT.vi"/>
+			<Item Name="StopWDT.vi" Type="VI" URL="../MatrixWDT.llb/StopWDT.vi"/>
 			<Item Name="Str2Clust.vi" Type="VI" URL="../../skil/lib/Str2Clust.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
