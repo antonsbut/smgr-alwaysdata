@@ -353,8 +353,46 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../skil/My Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[0]" Type="Str">{DA623477-3A86-4D19-B373-4E5AF5954AF6}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[1]" Type="Str">{9634429B-AAF5-4830-9CDA-78F403184617}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[10]" Type="Str">{2644F4CF-E682-48BD-B02D-5A42CB9A0C9D}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[11]" Type="Str">{5F17D11F-18FE-442C-9649-5681EEC56049}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[12]" Type="Str">{50E90BB0-CEB6-4057-9E0D-F933815D6622}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[13]" Type="Str">{258F4E40-8174-4929-A00A-F713E128D376}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[14]" Type="Str">{FB9D582B-BDAA-4DBF-B35D-90EC2179226A}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[15]" Type="Str">{0645374F-3929-4533-B6D6-F9FD5FE1A5D6}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[16]" Type="Str">{178CFB15-6B7B-4887-81E9-4A220C7E7297}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[2]" Type="Str">{A888E5AE-51B0-4B81-ACE1-6C2C10E1E1FD}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[3]" Type="Str">{C95A74E3-93B6-46CB-AD86-484E18A7D8F6}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[4]" Type="Str">{213B46F0-D87C-40B4-A382-477488A38AD6}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[5]" Type="Str">{F9DF0124-2654-4D1C-BBFA-C7C4D10EBF58}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[6]" Type="Str">{191FA48D-BD2B-4C65-9AF1-47CA24B0B0F0}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[7]" Type="Str">{338BEFA9-C03B-49F1-8379-44B27B97340C}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[8]" Type="Str">{1A590066-D40F-40D4-B4B9-67D4DBE584E8}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[9]" Type="Str">{F3C8CC14-22B6-4E92-8FBD-D55ABDE0290C}</Property>
+				<Property Name="Exe_actXinfo_enumCLSIDsCount" Type="Int">17</Property>
+				<Property Name="Exe_actXinfo_majorVersion" Type="Int">5</Property>
+				<Property Name="Exe_actXinfo_minorVersion" Type="Int">5</Property>
+				<Property Name="Exe_actXinfo_objCLSID[0]" Type="Str">{1E4CD51A-5EEF-4987-AE7C-FEE57D9A02E7}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[1]" Type="Str">{DAAF9024-E783-4704-A452-B6B3A8460A79}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[10]" Type="Str">{317702D0-0FF1-4407-A2BD-A9F8B8838273}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[11]" Type="Str">{5D723A7C-4B66-4235-8A4D-3C7C36F87660}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[12]" Type="Str">{704F36AE-E7F0-4D41-A74D-79271DB60DF4}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[13]" Type="Str">{AE65E2F9-CF2A-4F94-AAFA-B54CB15422D7}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[2]" Type="Str">{795EDE1C-95CE-40B0-BEDD-285E665E3266}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[3]" Type="Str">{4DD02256-E72E-4F95-872E-C55CD564D768}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[4]" Type="Str">{C649B1C1-3DA4-4881-9A8B-6C655BB38794}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[5]" Type="Str">{FB221552-62BF-4678-AFD5-4AD9FA6CC3D2}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[6]" Type="Str">{F9A6019C-4DCD-4B45-805C-503D59BA435A}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[7]" Type="Str">{AE252E3F-5F31-4D9B-97CF-0BE4A536F837}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[8]" Type="Str">{C952B0A6-BAC9-4D57-B434-19CC271E9330}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[9]" Type="Str">{F559996A-23D1-4B91-9032-92A836B1A523}</Property>
+				<Property Name="Exe_actXinfo_objCLSIDsCount" Type="Int">14</Property>
+				<Property Name="Exe_actXinfo_progIDPrefix" Type="Str">Skil2</Property>
+				<Property Name="Exe_actXServerName" Type="Str">Skil2</Property>
+				<Property Name="Exe_actXServerNameGUID" Type="Str">{880CDF16-57DA-4988-B783-B3A89C3A768D}</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PDview.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{15162A9E-0F09-4D88-8819-334A3E2F4EEE}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{946FCEB9-36C2-42F6-ACF8-3204D733CD2A}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/skil2.vi</Property>
@@ -374,11 +412,53 @@
 				<Property Name="Source[3].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[3].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/intercom/SMGR_intercom_03.vi</Property>
+				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[4].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[4].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[4].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[4].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/lib/Global 2.vi</Property>
+				<Property Name="Source[5].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[5].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[5].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[5].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[5].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[5].type" Type="Str">VI</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/lib/poster1.vi</Property>
+				<Property Name="Source[6].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[6].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[6].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[6].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/100_ToSkil3/SendToSMGRHB.vi</Property>
+				<Property Name="Source[7].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[7].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[7].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[7].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[7].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[7].type" Type="Str">VI</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/7_1/read_bin.vi</Property>
+				<Property Name="Source[8].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[8].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[8].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[8].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[8].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[8].type" Type="Str">VI</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/filters_4_new_SMGR/filters.vi</Property>
+				<Property Name="Source[9].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[9].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[9].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[9].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[9].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[9].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">10</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">NSTU</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">skil2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">26</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">32</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">skil2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 NSTU</Property>
@@ -605,7 +685,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">55</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">56</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
