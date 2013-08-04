@@ -319,8 +319,6 @@
 				<Item Name="niScope Commit.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope Commit.vi"/>
 				<Item Name="niSync Self-Test.vi" Type="VI" URL="/&lt;instrlib&gt;/niSync/niSync.llb/niSync Self-Test.vi"/>
 				<Item Name="niScope Self Test.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope Self Test.vi"/>
-				<Item Name="niScope Fetch Complex WDT.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Fetch Complex WDT.vi"/>
-				<Item Name="niScope Multi Fetch Complex WDT.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Multi Fetch Complex WDT.vi"/>
 			</Item>
 			<Item Name="niScope_32.dll" Type="Document" URL="niScope_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -334,9 +332,9 @@
 			<Item Name="user32.dll" Type="Document" URL="user32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="ni_httpClient.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/ni_httpClient.dll"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="lvsound2.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
+			<Item Name="ni_httpClient.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/ni_httpClient.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="skil2" Type="EXE">
@@ -394,12 +392,19 @@
 				<Property Name="Exe_actXServerName" Type="Str">Skil2</Property>
 				<Property Name="Exe_actXServerNameGUID" Type="Str">{880CDF16-57DA-4988-B783-B3A89C3A768D}</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PDview.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{946FCEB9-36C2-42F6-ACF8-3204D733CD2A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{558EAFA3-7A4E-4430-A0F1-FC69E2B7F0FB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/skil2.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/lib/mem_test.vi</Property>
+				<Property Name="Source[10].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[10].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[10].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[10].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[10].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[10].type" Type="Str">VI</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/lib/files_to_sent.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
@@ -456,11 +461,11 @@
 				<Property Name="Source[9].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[9].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">10</Property>
+				<Property Name="SourceCount" Type="Int">11</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">NSTU</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">skil2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">32</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">37</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">skil2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 NSTU</Property>
