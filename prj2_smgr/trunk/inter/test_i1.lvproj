@@ -24,8 +24,14 @@
 			<Item Name="settings.vi" Type="VI" URL="../settings.vi"/>
 		</Item>
 		<Item Name="subvis" Type="Folder">
+			<Item Name="docmd1.vi" Type="VI" URL="../docmd1.vi"/>
 			<Item Name="el2clust.vi" Type="VI" URL="../el2clust.vi"/>
+			<Item Name="get_c_v.vi" Type="VI" URL="../get_c_v.vi"/>
+			<Item Name="get_ini.vi" Type="VI" URL="../get_ini.vi"/>
 			<Item Name="getcmd.vi" Type="VI" URL="../getcmd.vi"/>
+			<Item Name="mlog1.vi" Type="VI" URL="../mlog1.vi"/>
+			<Item Name="mlog2.vi" Type="VI" URL="../mlog2.vi"/>
+			<Item Name="r1_test.vi" Type="VI" URL="../r1_test.vi"/>
 			<Item Name="read_file1.vi" Type="VI" URL="../read_file1.vi"/>
 			<Item Name="set_xml.vi" Type="VI" URL="../set_xml.vi"/>
 			<Item Name="url2filen.vi" Type="VI" URL="../url2filen.vi"/>
@@ -41,6 +47,7 @@
 		<Item Name="t1.xml" Type="Document" URL="../t1.xml"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
@@ -102,19 +109,21 @@
 			<Item Name="InitWDT.vi" Type="VI" URL="../MatrixWDT.llb/InitWDT.vi"/>
 			<Item Name="is_exe.vi" Type="VI" URL="../../skil/7_1/contr_lib.llb/is_exe.vi"/>
 			<Item Name="loadcontrsval.vi" Type="VI" URL="../../skil/lib/loadcontrsval.vi"/>
-			<Item Name="ni_httpClient.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/ni_httpClient.dll"/>
+			<Item Name="ni_httpClient.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/ni_httpClient.dll"/>
 			<Item Name="ResetWDT.vi" Type="VI" URL="../MatrixWDT.llb/ResetWDT.vi"/>
+			<Item Name="SendToSMGRHB.vi" Type="VI" URL="../../skil/100_ToSkil3/SendToSMGRHB.vi"/>
 			<Item Name="SetWDT.vi" Type="VI" URL="../MatrixWDT.llb/SetWDT.vi"/>
+			<Item Name="smgrIO.vi" Type="VI" URL="../../skil/100_ToSkil3/smgrIO.vi"/>
 			<Item Name="StartWDT.vi" Type="VI" URL="../MatrixWDT.llb/StartWDT.vi"/>
 			<Item Name="StopWDT.vi" Type="VI" URL="../MatrixWDT.llb/StopWDT.vi"/>
 			<Item Name="Str2Clust.vi" Type="VI" URL="../../skil/lib/Str2Clust.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="My Application" Type="EXE">
+			<Item Name="ReadRems" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{2216F1F8-174B-4755-9413-D78BBC6C8E62}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{52D25F67-F2E2-4C86-A203-380FB80C343C}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">My Application</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">ReadRems</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
@@ -122,8 +131,8 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
 				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../inter/app/Application.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">readrems.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../inter/app/readrems.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
@@ -131,7 +140,7 @@
 				<Property Name="Destination[2].destName" Type="Str">ini</Property>
 				<Property Name="Destination[2].path" Type="Path">../inter/app</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FCBCF7E7-BA9C-4F0E-BBAF-83BED37FCA3C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{ECC21C41-A303-4001-8911-4B88EE6024DB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
@@ -168,14 +177,14 @@
 				<Property Name="SourceCount" Type="Int">7</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">NSTU</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">My Application</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">12</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">ReadRems</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">14</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
-				<Property Name="TgtF_internalName" Type="Str">My Application</Property>
+				<Property Name="TgtF_internalName" Type="Str">ReadRems</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2013 NSTU</Property>
-				<Property Name="TgtF_productName" Type="Str">My Application</Property>
+				<Property Name="TgtF_productName" Type="Str">ReadRems</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{95D41FE3-DDF6-47C8-99A1-8C103FFB30AF}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Application.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">readrems.exe</Property>
 			</Item>
 		</Item>
 	</Item>
