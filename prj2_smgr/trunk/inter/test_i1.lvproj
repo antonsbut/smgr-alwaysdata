@@ -109,7 +109,7 @@
 			<Item Name="InitWDT.vi" Type="VI" URL="../MatrixWDT.llb/InitWDT.vi"/>
 			<Item Name="is_exe.vi" Type="VI" URL="../../skil/7_1/contr_lib.llb/is_exe.vi"/>
 			<Item Name="loadcontrsval.vi" Type="VI" URL="../../skil/lib/loadcontrsval.vi"/>
-			<Item Name="ni_httpClient.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/ni_httpClient.dll"/>
+			<Item Name="ni_httpClient.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/ni_httpClient.dll"/>
 			<Item Name="ResetWDT.vi" Type="VI" URL="../MatrixWDT.llb/ResetWDT.vi"/>
 			<Item Name="SendToSMGRHB.vi" Type="VI" URL="../../skil/100_ToSkil3/SendToSMGRHB.vi"/>
 			<Item Name="SetWDT.vi" Type="VI" URL="../MatrixWDT.llb/SetWDT.vi"/>
@@ -178,7 +178,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">NSTU</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">ReadRems</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">14</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">15</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">ReadRems</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2013 NSTU</Property>
