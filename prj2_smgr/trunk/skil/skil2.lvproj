@@ -248,6 +248,11 @@
 				<Item Name="FindCloseTagByName.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/FindCloseTagByName.vi"/>
 				<Item Name="FindElementStartByName.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/FindElementStartByName.vi"/>
 				<Item Name="Read From XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File(string).vi"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
+				<Item Name="Write To Spreadsheet File (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (I64).vi"/>
+				<Item Name="Write To Spreadsheet File (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (DBL).vi"/>
+				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niScope vertical coupling.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope vertical coupling.ctl"/>
@@ -331,8 +336,6 @@
 				<Item Name="niScope Commit.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope Commit.vi"/>
 				<Item Name="niSync Self-Test.vi" Type="VI" URL="/&lt;instrlib&gt;/niSync/niSync.llb/niSync Self-Test.vi"/>
 				<Item Name="niScope Self Test.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope Self Test.vi"/>
-				<Item Name="niScope Fetch Complex WDT.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Fetch Complex WDT.vi"/>
-				<Item Name="niScope Multi Fetch Complex WDT.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Multi Fetch Complex WDT.vi"/>
 			</Item>
 			<Item Name="niScope_32.dll" Type="Document" URL="niScope_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -346,9 +349,6 @@
 			<Item Name="user32.dll" Type="Document" URL="user32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="ni_httpClient.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/ni_httpClient.dll"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="lvsound2.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
 			<Item Name="mlog2.vi" Type="VI" URL="../../inter/mlog2.vi"/>
 			<Item Name="mlog1.vi" Type="VI" URL="../../inter/mlog1.vi"/>
 			<Item Name="ResetWDT.vi" Type="VI" URL="../../inter/MatrixWDT.llb/ResetWDT.vi"/>
@@ -360,6 +360,9 @@
 			<Item Name="read_file1.vi" Type="VI" URL="../../inter/read_file1.vi"/>
 			<Item Name="docmd1.vi" Type="VI" URL="../../inter/docmd1.vi"/>
 			<Item Name="el2clust.vi" Type="VI" URL="../../inter/el2clust.vi"/>
+			<Item Name="ni_httpClient.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/ni_httpClient.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="skil2" Type="EXE">
@@ -490,7 +493,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">NSTU</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">skil2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">37</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">40</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">skil2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 NSTU</Property>
@@ -724,7 +727,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">71</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">72</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
