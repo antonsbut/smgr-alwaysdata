@@ -55,6 +55,51 @@
 			<Item Name="testGPS_UTC.vi" Type="VI" URL="../testGPS_UTC.vi"/>
 			<Item Name="test_compressor.vi" Type="VI" URL="../test_compressor.vi"/>
 		</Item>
+		<Item Name="inter" Type="Folder">
+			<Item Name="app" Type="Folder">
+				<Item Name="data" Type="Folder">
+					<Item Name="ni_httpClient.dll" Type="Document" URL="../../inter/app/data/ni_httpClient.dll"/>
+					<Item Name="readrems.htm" Type="Document" URL="../../inter/app/data/readrems.htm"/>
+				</Item>
+				<Item Name="glu.ini" Type="Document" URL="../../inter/app/glu.ini"/>
+				<Item Name="readrems.aliases" Type="Document" URL="../../inter/app/readrems.aliases"/>
+				<Item Name="readrems.exe" Type="Document" URL="../../inter/app/readrems.exe"/>
+				<Item Name="readrems.ini" Type="Document" URL="../../inter/app/readrems.ini"/>
+			</Item>
+			<Item Name="MatrixWDT" Type="Folder">
+				<Item Name="InitWDT.vi" Type="VI" URL="../../inter/MatrixWDT.llb/InitWDT.vi"/>
+				<Item Name="ResetWDT.vi" Type="VI" URL="../../inter/MatrixWDT.llb/ResetWDT.vi"/>
+				<Item Name="SetWDT.vi" Type="VI" URL="../../inter/MatrixWDT.llb/SetWDT.vi"/>
+				<Item Name="StartWDT.vi" Type="VI" URL="../../inter/MatrixWDT.llb/StartWDT.vi"/>
+				<Item Name="StopWDT.vi" Type="VI" URL="../../inter/MatrixWDT.llb/StopWDT.vi"/>
+			</Item>
+			<Item Name="1.txt" Type="Document" URL="../../inter/1.txt"/>
+			<Item Name="cmd1.vi" Type="VI" URL="../../inter/cmd1.vi"/>
+			<Item Name="cmd2.vi" Type="VI" URL="../../inter/cmd2.vi"/>
+			<Item Name="docmd1.vi" Type="VI" URL="../../inter/docmd1.vi"/>
+			<Item Name="el2clust.vi" Type="VI" URL="../../inter/el2clust.vi"/>
+			<Item Name="get_c_v.vi" Type="VI" URL="../../inter/get_c_v.vi"/>
+			<Item Name="get_ini.vi" Type="VI" URL="../../inter/get_ini.vi"/>
+			<Item Name="getcmd.vi" Type="VI" URL="../../inter/getcmd.vi"/>
+			<Item Name="glu.ini" Type="Document" URL="../../inter/glu.ini"/>
+			<Item Name="heartbeat.htm" Type="Document" URL="../../inter/heartbeat.htm"/>
+			<Item Name="mlog1.vi" Type="VI" URL="../../inter/mlog1.vi"/>
+			<Item Name="mlog2.vi" Type="VI" URL="../../inter/mlog2.vi"/>
+			<Item Name="qw.ini" Type="Document" URL="../../inter/qw.ini"/>
+			<Item Name="qw1.hta" Type="Document" URL="../../inter/qw1.hta"/>
+			<Item Name="r1_test.vi" Type="VI" URL="../../inter/r1_test.vi"/>
+			<Item Name="read_file1.vi" Type="VI" URL="../../inter/read_file1.vi"/>
+			<Item Name="readrems.htm" Type="Document" URL="../../inter/readrems.htm"/>
+			<Item Name="readrems.ini" Type="Document" URL="../../inter/readrems.ini"/>
+			<Item Name="set_xml.vi" Type="VI" URL="../../inter/set_xml.vi"/>
+			<Item Name="settings.vi" Type="VI" URL="../../inter/settings.vi"/>
+			<Item Name="t1.xml" Type="Document" URL="../../inter/t1.xml"/>
+			<Item Name="test_i1.aliases" Type="Document" URL="../../inter/test_i1.aliases"/>
+			<Item Name="test_i1.lvlps" Type="Document" URL="../../inter/test_i1.lvlps"/>
+			<Item Name="test_i1.lvproj" Type="Document" URL="../../inter/test_i1.lvproj"/>
+			<Item Name="testWDT.vi" Type="VI" URL="../../inter/testWDT.vi"/>
+			<Item Name="url2filen.vi" Type="VI" URL="../../inter/url2filen.vi"/>
+		</Item>
 		<Item Name="PDview.ico" Type="Document" URL="../PDview.ico"/>
 		<Item Name="index.htm" Type="Document" URL="../index.htm"/>
 		<Item Name="contents.htm" Type="Document" URL="../contents.htm"/>
@@ -254,6 +299,9 @@
 				<Item Name="Write To Spreadsheet File (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (I64).vi"/>
 				<Item Name="Write To Spreadsheet File (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (DBL).vi"/>
 				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
+				<Item Name="Write to XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File.vi"/>
+				<Item Name="Write to XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(string).vi"/>
+				<Item Name="Write to XML File(array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(array).vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niScope vertical coupling.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope vertical coupling.ctl"/>
@@ -337,6 +385,8 @@
 				<Item Name="niScope Commit.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope Commit.vi"/>
 				<Item Name="niSync Self-Test.vi" Type="VI" URL="/&lt;instrlib&gt;/niSync/niSync.llb/niSync Self-Test.vi"/>
 				<Item Name="niScope Self Test.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope Self Test.vi"/>
+				<Item Name="niScope Fetch Complex WDT.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Fetch Complex WDT.vi"/>
+				<Item Name="niScope Multi Fetch Complex WDT.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Multi Fetch Complex WDT.vi"/>
 			</Item>
 			<Item Name="niScope_32.dll" Type="Document" URL="niScope_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -350,20 +400,9 @@
 			<Item Name="user32.dll" Type="Document" URL="user32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="mlog2.vi" Type="VI" URL="../../inter/mlog2.vi"/>
-			<Item Name="mlog1.vi" Type="VI" URL="../../inter/mlog1.vi"/>
-			<Item Name="ResetWDT.vi" Type="VI" URL="../../inter/MatrixWDT.llb/ResetWDT.vi"/>
-			<Item Name="r1_test.vi" Type="VI" URL="../../inter/r1_test.vi"/>
-			<Item Name="get_ini.vi" Type="VI" URL="../../inter/get_ini.vi"/>
-			<Item Name="get_c_v.vi" Type="VI" URL="../../inter/get_c_v.vi"/>
-			<Item Name="getcmd.vi" Type="VI" URL="../../inter/getcmd.vi"/>
-			<Item Name="url2filen.vi" Type="VI" URL="../../inter/url2filen.vi"/>
-			<Item Name="read_file1.vi" Type="VI" URL="../../inter/read_file1.vi"/>
-			<Item Name="docmd1.vi" Type="VI" URL="../../inter/docmd1.vi"/>
-			<Item Name="el2clust.vi" Type="VI" URL="../../inter/el2clust.vi"/>
-			<Item Name="ni_httpClient.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/ni_httpClient.dll"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
+			<Item Name="ni_httpClient.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/ni_httpClient.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvsound2.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="skil2" Type="EXE">
@@ -769,6 +808,46 @@
 				<Property Name="TgtF_productName" Type="Str">rgpna</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{428DEFE6-5403-454C-9918-5C0327667559}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">rgpna.exe</Property>
+			</Item>
+			<Item Name="readrems" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{8713DEE9-6A7E-432B-A3DB-C54E0FB2FCF9}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{92DC748F-8B4F-4FD3-8D75-FCAAF340D516}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">readrems</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../skil/My Application</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Destination[0].destName" Type="Str">Readrems.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../skil/My Application/Readrems.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../skil/My Application/data</Property>
+				<Property Name="Destination[2].destName" Type="Str">ini</Property>
+				<Property Name="Destination[2].path" Type="Path">../skil/My Application</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PDview.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{1F31E5D9-2944-4920-A713-1B4888519C5F}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/readrems.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/inter/glu.ini</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
+				<Property Name="TgtF_companyName" Type="Str">SibNiiE</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">readrems</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">readrems</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2013 </Property>
+				<Property Name="TgtF_productName" Type="Str">readrems</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{B6C348FC-C63A-4126-94A2-A9B641B6B64E}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Readrems.exe</Property>
 			</Item>
 		</Item>
 	</Item>
