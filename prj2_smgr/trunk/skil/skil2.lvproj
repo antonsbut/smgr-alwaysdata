@@ -56,16 +56,6 @@
 			<Item Name="test_compressor.vi" Type="VI" URL="../test_compressor.vi"/>
 		</Item>
 		<Item Name="inter" Type="Folder">
-			<Item Name="app" Type="Folder">
-				<Item Name="data" Type="Folder">
-					<Item Name="ni_httpClient.dll" Type="Document" URL="../../inter/app/data/ni_httpClient.dll"/>
-					<Item Name="readrems.htm" Type="Document" URL="../../inter/app/data/readrems.htm"/>
-				</Item>
-				<Item Name="glu.ini" Type="Document" URL="../../inter/app/glu.ini"/>
-				<Item Name="readrems.aliases" Type="Document" URL="../../inter/app/readrems.aliases"/>
-				<Item Name="readrems.exe" Type="Document" URL="../../inter/app/readrems.exe"/>
-				<Item Name="readrems.ini" Type="Document" URL="../../inter/app/readrems.ini"/>
-			</Item>
 			<Item Name="MatrixWDT" Type="Folder">
 				<Item Name="InitWDT.vi" Type="VI" URL="../../inter/MatrixWDT.llb/InitWDT.vi"/>
 				<Item Name="ResetWDT.vi" Type="VI" URL="../../inter/MatrixWDT.llb/ResetWDT.vi"/>
@@ -343,7 +333,7 @@
 				<Item Name="niSync Get Time.vi" Type="VI" URL="/&lt;instrlib&gt;/niSync/niSync.llb/niSync Get Time.vi"/>
 				<Item Name="niSync Convert 1588 Time To Time Stamp.vi" Type="VI" URL="/&lt;instrlib&gt;/niSync/niSync.llb/niSync Convert 1588 Time To Time Stamp.vi"/>
 				<Item Name="niSync Close.vi" Type="VI" URL="/&lt;instrlib&gt;/niSync/niSync.llb/niSync Close.vi"/>
-				<Item Name="niScope Initiate Acquisition.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Initiate Acquisition.vi"/>
+				<Item Name="niScope Initiate Acquisition.vi" Type="VI" URL="/&lt;instrlib&gt;/NISCOPE/Acquire/Fetch/niScope Initiate Acquisition.vi"/>
 				<Item Name="niScope Fetch (poly).vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Fetch (poly).vi"/>
 				<Item Name="niScope Fetch Binary 8.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Fetch Binary 8.vi"/>
 				<Item Name="niScope Fetch Error Chain.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Fetch Error Chain.vi"/>
@@ -385,8 +375,6 @@
 				<Item Name="niScope Commit.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope Commit.vi"/>
 				<Item Name="niSync Self-Test.vi" Type="VI" URL="/&lt;instrlib&gt;/niSync/niSync.llb/niSync Self-Test.vi"/>
 				<Item Name="niScope Self Test.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope Self Test.vi"/>
-				<Item Name="niScope Fetch Complex WDT.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Fetch Complex WDT.vi"/>
-				<Item Name="niScope Multi Fetch Complex WDT.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Multi Fetch Complex WDT.vi"/>
 			</Item>
 			<Item Name="niScope_32.dll" Type="Document" URL="niScope_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -533,7 +521,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">NSTU</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">skil2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">42</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">44</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">skil2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 NSTU</Property>
@@ -767,7 +755,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">73</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">75</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
@@ -842,12 +830,119 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">SibNiiE</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">readrems</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">2</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">readrems</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2013 </Property>
 				<Property Name="TgtF_productName" Type="Str">readrems</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{B6C348FC-C63A-4126-94A2-A9B641B6B64E}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Readrems.exe</Property>
+			</Item>
+			<Item Name="smvl_inst" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">c:\SMVL</Property>
+				<Property Name="Destination[0].path" Type="Path">/c/SMVL</Property>
+				<Property Name="Destination[0].tag" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
+				<Property Name="Destination[0].type" Type="Str">absFolder</Property>
+				<Property Name="Destination[1].name" Type="Str">Data</Property>
+				<Property Name="Destination[1].parent" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
+				<Property Name="Destination[1].tag" Type="Str">{37526671-73AB-4E61-A715-C23AED0ED759}</Property>
+				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{EDFC39D7-B782-4B43-BF9C-D1B80ADEA863}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2010 SP1</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{9F6EADB1-707C-41AF-8F3D-FB856FA8BD1C}</Property>
+				<Property Name="DistPart[1].flavorID" Type="Str">_full_</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{B1EE55C1-F98B-40AB-AF0C-422ECCC88454}</Property>
+				<Property Name="DistPart[1].productName" Type="Str">NI Measurement &amp; Automation Explorer 5.0</Property>
+				<Property Name="DistPart[1].upgradeCode" Type="Str">{AE940F24-CC0E-4148-9A96-10FB04D9796D}</Property>
+				<Property Name="DistPartCount" Type="Int">2</Property>
+				<Property Name="INST_author" Type="Str">v</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">/C/work/lv2010/builds/skil2/smvl_inst</Property>
+				<Property Name="INST_buildSpecName" Type="Str">smvl_inst</Property>
+				<Property Name="INST_defaultDir" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
+				<Property Name="INST_productName" Type="Str">skil2</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
+				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="MSI_arpCompany" Type="Str">СИБНИИЭ</Property>
+				<Property Name="MSI_distID" Type="Str">{3F78E906-B2D3-4E34-A183-BE750B0AFF0A}</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{034D619B-9521-481D-9A42-04B52CC51E22}</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">skil2.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Обработка</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">СМВЛ</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{D7A9C3DD-D47B-4570-B120-8DFF13A93133}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">skil2</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/skil2</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="Source[1].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
+				<Property Name="Source[1].File[0].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
+				<Property Name="Source[1].File[0].name" Type="Str">rgpn2.exe</Property>
+				<Property Name="Source[1].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[1].File[0].Shortcut[0].name" Type="Str">Регистратор</Property>
+				<Property Name="Source[1].File[0].Shortcut[0].subDir" Type="Str">skil2</Property>
+				<Property Name="Source[1].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[1].File[0].tag" Type="Str">{7622774F-2578-4DC9-BEFC-4FBAAE1A67D6}</Property>
+				<Property Name="Source[1].FileCount" Type="Int">1</Property>
+				<Property Name="Source[1].name" Type="Str">rgpn2</Property>
+				<Property Name="Source[1].tag" Type="Ref">/My Computer/Build Specifications/rgpn2</Property>
+				<Property Name="Source[1].type" Type="Str">EXE</Property>
+				<Property Name="Source[2].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
+				<Property Name="Source[2].File[0].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
+				<Property Name="Source[2].File[0].name" Type="Str">rgpna.exe</Property>
+				<Property Name="Source[2].File[0].runEXE" Type="Bool">true</Property>
+				<Property Name="Source[2].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[2].File[0].Shortcut[0].name" Type="Str">Администрирование</Property>
+				<Property Name="Source[2].File[0].Shortcut[0].subDir" Type="Str">skil2</Property>
+				<Property Name="Source[2].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[2].File[0].tag" Type="Str">{428DEFE6-5403-454C-9918-5C0327667559}</Property>
+				<Property Name="Source[2].FileCount" Type="Int">1</Property>
+				<Property Name="Source[2].name" Type="Str">rgpna</Property>
+				<Property Name="Source[2].tag" Type="Ref">/My Computer/Build Specifications/rgpna</Property>
+				<Property Name="Source[2].type" Type="Str">EXE</Property>
+				<Property Name="Source[3].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
+				<Property Name="Source[3].File[0].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
+				<Property Name="Source[3].File[0].name" Type="Str">Readrems.exe</Property>
+				<Property Name="Source[3].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[3].File[0].Shortcut[0].name" Type="Str">WatchDog</Property>
+				<Property Name="Source[3].File[0].Shortcut[0].subDir" Type="Str">skil2</Property>
+				<Property Name="Source[3].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[3].File[0].tag" Type="Str">{B6C348FC-C63A-4126-94A2-A9B641B6B64E}</Property>
+				<Property Name="Source[3].FileCount" Type="Int">1</Property>
+				<Property Name="Source[3].name" Type="Str">readrems</Property>
+				<Property Name="Source[3].tag" Type="Ref">/My Computer/Build Specifications/readrems</Property>
+				<Property Name="Source[3].type" Type="Str">EXE</Property>
+				<Property Name="Source[4].dest" Type="Str">{37526671-73AB-4E61-A715-C23AED0ED759}</Property>
+				<Property Name="Source[4].name" Type="Str">contents.htm</Property>
+				<Property Name="Source[4].tag" Type="Ref">/My Computer/contents.htm</Property>
+				<Property Name="Source[4].type" Type="Str">File</Property>
+				<Property Name="Source[5].dest" Type="Str">{37526671-73AB-4E61-A715-C23AED0ED759}</Property>
+				<Property Name="Source[5].name" Type="Str">err.htm</Property>
+				<Property Name="Source[5].tag" Type="Ref">/My Computer/err.htm</Property>
+				<Property Name="Source[5].type" Type="Str">File</Property>
+				<Property Name="Source[6].dest" Type="Str">{37526671-73AB-4E61-A715-C23AED0ED759}</Property>
+				<Property Name="Source[6].name" Type="Str">ini.htm</Property>
+				<Property Name="Source[6].tag" Type="Ref">/My Computer/ini.htm</Property>
+				<Property Name="Source[6].type" Type="Str">File</Property>
+				<Property Name="Source[7].dest" Type="Str">{37526671-73AB-4E61-A715-C23AED0ED759}</Property>
+				<Property Name="Source[7].name" Type="Str">obrab.htm</Property>
+				<Property Name="Source[7].tag" Type="Ref">/My Computer/obrab.htm</Property>
+				<Property Name="Source[7].type" Type="Str">File</Property>
+				<Property Name="Source[8].dest" Type="Str">{37526671-73AB-4E61-A715-C23AED0ED759}</Property>
+				<Property Name="Source[8].name" Type="Str">qw.htm</Property>
+				<Property Name="Source[8].tag" Type="Ref">/My Computer/qw.htm</Property>
+				<Property Name="Source[8].type" Type="Str">File</Property>
+				<Property Name="SourceCount" Type="Int">9</Property>
 			</Item>
 		</Item>
 	</Item>
