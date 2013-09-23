@@ -34,8 +34,6 @@
 		<Item Name="top_vi" Type="Folder">
 			<Item Name="skil2.vi" Type="VI" URL="../skil2.vi"/>
 			<Item Name="skil3.vi" Type="VI" URL="../skil3.vi"/>
-			<Item Name="korona2012.vi" Type="VI" URL="../korona2012.vi"/>
-			<Item Name="TDMS-File Viewer.vi" Type="VI" URL="../TDMS-File Viewer.vi"/>
 			<Item Name="readrems.vi" Type="VI" URL="../../inter/readrems.vi"/>
 			<Item Name="rgpna.vi" Type="VI" URL="../rgpna.vi"/>
 		</Item>
@@ -52,6 +50,8 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="tests" Type="Folder">
+			<Item Name="korona2012.vi" Type="VI" URL="../korona2012.vi"/>
+			<Item Name="TDMS-File Viewer.vi" Type="VI" URL="../TDMS-File Viewer.vi"/>
 			<Item Name="testGPS_UTC.vi" Type="VI" URL="../testGPS_UTC.vi"/>
 			<Item Name="test_compressor.vi" Type="VI" URL="../test_compressor.vi"/>
 		</Item>
@@ -521,7 +521,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">NSTU</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">skil2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">44</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">45</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">skil2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 NSTU</Property>
@@ -755,7 +755,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">75</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">76</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
@@ -830,7 +830,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">SibNiiE</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">readrems</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">2</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">3</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">readrems</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2013 </Property>
