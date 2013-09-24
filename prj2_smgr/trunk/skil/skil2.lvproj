@@ -54,6 +54,7 @@
 			<Item Name="TDMS-File Viewer.vi" Type="VI" URL="../TDMS-File Viewer.vi"/>
 			<Item Name="testGPS_UTC.vi" Type="VI" URL="../testGPS_UTC.vi"/>
 			<Item Name="test_compressor.vi" Type="VI" URL="../test_compressor.vi"/>
+			<Item Name="setup.vi" Type="VI" URL="../setup.vi"/>
 		</Item>
 		<Item Name="inter" Type="Folder">
 			<Item Name="MatrixWDT" Type="Folder">

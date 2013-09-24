@@ -59,4 +59,8 @@ qwstop.cmd	- отключение watchdog-а
 <h3>RGPNA.EXE</h3>
 <p>Программа предназначена для облегчения настройки и проверки всего комплекса регистратора.
 Запускается только вручную.</p>
+<h3>Установка</h3>
+<p>1. Для саморегистрации программы skil2.exe и rgpn2.exe нужно запустить один раз с правами администратора!</p>
+<p>2. Создать задачу в планировщик WINDOWS. Например, командой <nobr><code>schtasks /create /sc minute /mo 5 /tn watchdog /tr "'c:\work\lv2010\skil\skil\my application\readrems.exe'"</code></nobr>, см. qwrun.cmd. </p>
+<p>3. Создать ярлык в Автозагрузку для аппаратного таймера watchdog-а, см. autoexec.cmd.</p>
 </body></html>
