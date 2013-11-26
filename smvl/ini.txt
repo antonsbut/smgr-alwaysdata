@@ -1,0 +1,30 @@
+[skil3.vi]
+ch0 = "sync:0:0"
+ch1 = "phase_a:1:4"
+ch2 = "phase_b:2:5"
+ch3 = "phase_c:3:6"
+DevNo = 14,000000
+SMGR_link = "http://smgr-mp.alwaysdata.net/post_event/"
+save = FALSE
+send = FALSE
+Ver = ""
+StartPath = "/C/skil/skil"
+schedule = FALSE
+KR_data = "ssh.alwaysdata.com:12673"
+restart = false
+sch_per = 30,000000
+Groups = "ом:ом"
+HeartBeat = "http://smgr-mp.alwaysdata.net/heartbeat/"
+
+[filters.vi]
+filter = "FIR"
+stop_freq = 200e3
+high_freq = 500e3
+order = 2
+taps = 500
+phase_a = "FIR:500:2:800e3:1000e3"
+phase_b = "FIR:500:2:800e3:1000e3"
+phase_c = "FIR:500:2:800e3:1000e3"
+
+[stat_f_s3.vi]
+kD = 3
