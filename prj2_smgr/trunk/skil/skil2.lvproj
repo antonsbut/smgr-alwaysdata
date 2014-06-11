@@ -36,6 +36,7 @@
 			<Item Name="skil3.vi" Type="VI" URL="../skil3.vi"/>
 			<Item Name="readrems.vi" Type="VI" URL="../../inter/readrems.vi"/>
 			<Item Name="rgpna.vi" Type="VI" URL="../rgpna.vi"/>
+			<Item Name="readrems2.vi" Type="VI" URL="../readrems2.vi"/>
 		</Item>
 		<Item Name="add10_04_2012" Type="Folder" URL="../add10_04_2012">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
@@ -55,6 +56,10 @@
 			<Item Name="testGPS_UTC.vi" Type="VI" URL="../testGPS_UTC.vi"/>
 			<Item Name="test_compressor.vi" Type="VI" URL="../test_compressor.vi"/>
 			<Item Name="setup.vi" Type="VI" URL="../setup.vi"/>
+			<Item Name="generate_smgr.vi" Type="VI" URL="../generate_smgr.vi"/>
+			<Item Name="get_serv_msgs.vi" Type="VI" URL="../get_serv_msgs.vi"/>
+			<Item Name="mag_resp.vi" Type="VI" URL="../mag_resp.vi"/>
+			<Item Name="SMGR File Viewer_Spectr_LF.vi" Type="VI" URL="../SMGR File Viewer_Spectr_LF.vi"/>
 		</Item>
 		<Item Name="inter" Type="Folder">
 			<Item Name="MatrixWDT" Type="Folder">
@@ -65,8 +70,6 @@
 				<Item Name="StopWDT.vi" Type="VI" URL="../../inter/MatrixWDT.llb/StopWDT.vi"/>
 			</Item>
 			<Item Name="1.txt" Type="Document" URL="../../inter/1.txt"/>
-			<Item Name="cmd1.vi" Type="VI" URL="../../inter/cmd1.vi"/>
-			<Item Name="cmd2.vi" Type="VI" URL="../../inter/cmd2.vi"/>
 			<Item Name="docmd1.vi" Type="VI" URL="../../inter/docmd1.vi"/>
 			<Item Name="el2clust.vi" Type="VI" URL="../../inter/el2clust.vi"/>
 			<Item Name="get_c_v.vi" Type="VI" URL="../../inter/get_c_v.vi"/>
@@ -76,6 +79,7 @@
 			<Item Name="heartbeat.htm" Type="Document" URL="../../inter/heartbeat.htm"/>
 			<Item Name="mlog1.vi" Type="VI" URL="../../inter/mlog1.vi"/>
 			<Item Name="mlog2.vi" Type="VI" URL="../../inter/mlog2.vi"/>
+			<Item Name="mlog3.vi" Type="VI" URL="../../inter/mlog3.vi"/>
 			<Item Name="qw.ini" Type="Document" URL="../../inter/qw.ini"/>
 			<Item Name="qw1.hta" Type="Document" URL="../../inter/qw1.hta"/>
 			<Item Name="r1_test.vi" Type="VI" URL="../../inter/r1_test.vi"/>
@@ -83,12 +87,9 @@
 			<Item Name="readrems.htm" Type="Document" URL="../../inter/readrems.htm"/>
 			<Item Name="readrems.ini" Type="Document" URL="../../inter/readrems.ini"/>
 			<Item Name="set_xml.vi" Type="VI" URL="../../inter/set_xml.vi"/>
-			<Item Name="settings.vi" Type="VI" URL="../../inter/settings.vi"/>
 			<Item Name="t1.xml" Type="Document" URL="../../inter/t1.xml"/>
-			<Item Name="test_i1.aliases" Type="Document" URL="../../inter/test_i1.aliases"/>
-			<Item Name="test_i1.lvlps" Type="Document" URL="../../inter/test_i1.lvlps"/>
-			<Item Name="test_i1.lvproj" Type="Document" URL="../../inter/test_i1.lvproj"/>
 			<Item Name="testWDT.vi" Type="VI" URL="../../inter/testWDT.vi"/>
+			<Item Name="docmd2.vi" Type="VI" URL="../../inter/docmd2.vi"/>
 			<Item Name="url2filen.vi" Type="VI" URL="../../inter/url2filen.vi"/>
 		</Item>
 		<Item Name="PDview.ico" Type="Document" URL="../PDview.ico"/>
@@ -293,6 +294,24 @@
 				<Item Name="Write to XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File.vi"/>
 				<Item Name="Write to XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(string).vi"/>
 				<Item Name="Write to XML File(array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(array).vi"/>
+				<Item Name="exnSpectralBlock spectral measurements peak poly.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/Spectral/Block/exnSpectralBlock spectral measurements peak poly.vi"/>
+				<Item Name="exnSpectralBlock spectral measurements peak array WFM (CDB).vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/Spectral/Block/exnSpectralBlock spectral measurements peak array WFM (CDB).vi"/>
+				<Item Name="exnSpectralBlock clear array magnitudes.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/Spectral/Block/exnSpectralBlock clear array magnitudes.vi"/>
+				<Item Name="exnSpectralBlock clear array phases.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/Spectral/Block/exnSpectralBlock clear array phases.vi"/>
+				<Item Name="exnSpectralBlock spectral measurements peak array WFM.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/Spectral/Block/exnSpectralBlock spectral measurements peak array WFM.vi"/>
+				<Item Name="exnSpectralBlock spectral measurements peak DDT.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/Spectral/Block/exnSpectralBlock spectral measurements peak DDT.vi"/>
+				<Item Name="exnSpectralBlock mod exp dyn x attribs.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/Spectral/Block/exnSpectralBlock mod exp dyn x attribs.vi"/>
+				<Item Name="ex_Modify Signals Names.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signals Names.vi"/>
+				<Item Name="ex_Modify Signal Name.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signal Name.vi"/>
+				<Item Name="exnSpectralBlock clear DDT y array.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/Spectral/Block/exnSpectralBlock clear DDT y array.vi"/>
+				<Item Name="exnSpectralBlock spectral measurements peak WFM (CDB).vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/Spectral/Block/exnSpectralBlock spectral measurements peak WFM (CDB).vi"/>
+				<Item Name="exnSpectralBlock clear magnitude.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/Spectral/Block/exnSpectralBlock clear magnitude.vi"/>
+				<Item Name="exnSpectralBlock clear phase.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/Spectral/Block/exnSpectralBlock clear phase.vi"/>
+				<Item Name="exnSpectralBlock spectral measurements peak WFM.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/Spectral/Block/exnSpectralBlock spectral measurements peak WFM.vi"/>
+				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
+				<Item Name="NI_DigFilterLicensed.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/Digital Filter Design/NI_DigFilterLicensed.lvlib"/>
+				<Item Name="NI_DigFilter_FXP.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/Digital Filter Design/NI_DigFilter_FXP.lvlib"/>
+				<Item Name="dfd_Mutate Filter Obj QSetting 0x100 to 0x200.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Digital Filter Design/_Objects.llb/dfd_Mutate Filter Obj QSetting 0x100 to 0x200.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niScope vertical coupling.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope vertical coupling.ctl"/>
@@ -376,6 +395,8 @@
 				<Item Name="niScope Commit.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope Commit.vi"/>
 				<Item Name="niSync Self-Test.vi" Type="VI" URL="/&lt;instrlib&gt;/niSync/niSync.llb/niSync Self-Test.vi"/>
 				<Item Name="niScope Self Test.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope Self Test.vi"/>
+				<Item Name="niScope Fetch Complex WDT.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Fetch Complex WDT.vi"/>
+				<Item Name="niScope Multi Fetch Complex WDT.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Multi Fetch Complex WDT.vi"/>
 			</Item>
 			<Item Name="niScope_32.dll" Type="Document" URL="niScope_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -756,7 +777,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">76</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">77</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
@@ -768,7 +789,6 @@
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{1BEC78B8-81B8-4249-8407-AD3CFD496AD5}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{EC57A2DD-E56D-4FAE-9F4F-8FAE34A583FB}</Property>
-				<Property Name="App_winsec.description" Type="Str">http://www.FALSE.com</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">rgpna</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
@@ -782,15 +802,24 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../skil/My Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F44B57C8-C636-4801-8D14-3B5611DA9EFF}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D453389C-02CD-40F9-A89C-43B9ED3B286D}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/rgpna.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/add10_04_2012/smgr2table.vi</Property>
+				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[2].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[2].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">TC</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">rgpna</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">2</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">rgpna</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2013 TC</Property>
@@ -850,12 +879,12 @@
 				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{EDFC39D7-B782-4B43-BF9C-D1B80ADEA863}</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{1478F207-677B-443B-B305-E924A6289F1B}</Property>
 				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2010 SP1</Property>
 				<Property Name="DistPart[0].upgradeCode" Type="Str">{9F6EADB1-707C-41AF-8F3D-FB856FA8BD1C}</Property>
 				<Property Name="DistPart[1].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{B1EE55C1-F98B-40AB-AF0C-422ECCC88454}</Property>
-				<Property Name="DistPart[1].productName" Type="Str">NI Measurement &amp; Automation Explorer 5.0</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{6A996EAF-F118-4C11-AD14-8029547085CB}</Property>
+				<Property Name="DistPart[1].productName" Type="Str">NI Measurement &amp; Automation Explorer 5.5</Property>
 				<Property Name="DistPart[1].upgradeCode" Type="Str">{AE940F24-CC0E-4148-9A96-10FB04D9796D}</Property>
 				<Property Name="DistPartCount" Type="Int">2</Property>
 				<Property Name="INST_author" Type="Str">v</Property>
@@ -864,7 +893,7 @@
 				<Property Name="INST_buildSpecName" Type="Str">smvl_inst</Property>
 				<Property Name="INST_defaultDir" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
 				<Property Name="INST_productName" Type="Str">skil2</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.3</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="MSI_arpCompany" Type="Str">СИБНИИЭ</Property>
 				<Property Name="MSI_distID" Type="Str">{3F78E906-B2D3-4E34-A183-BE750B0AFF0A}</Property>
@@ -877,9 +906,10 @@
 				<Property Name="Source[0].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
 				<Property Name="Source[0].File[0].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
 				<Property Name="Source[0].File[0].name" Type="Str">skil2.exe</Property>
+				<Property Name="Source[0].File[0].RegCOM" Type="Bool">true</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Обработка</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">СМВЛ</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">SMVL</Property>
 				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{D7A9C3DD-D47B-4570-B120-8DFF13A93133}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
@@ -889,9 +919,10 @@
 				<Property Name="Source[1].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
 				<Property Name="Source[1].File[0].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
 				<Property Name="Source[1].File[0].name" Type="Str">rgpn2.exe</Property>
+				<Property Name="Source[1].File[0].RegCOM" Type="Bool">true</Property>
 				<Property Name="Source[1].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
 				<Property Name="Source[1].File[0].Shortcut[0].name" Type="Str">Регистратор</Property>
-				<Property Name="Source[1].File[0].Shortcut[0].subDir" Type="Str">skil2</Property>
+				<Property Name="Source[1].File[0].Shortcut[0].subDir" Type="Str">SMVL</Property>
 				<Property Name="Source[1].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[1].File[0].tag" Type="Str">{7622774F-2578-4DC9-BEFC-4FBAAE1A67D6}</Property>
 				<Property Name="Source[1].FileCount" Type="Int">1</Property>
@@ -901,10 +932,9 @@
 				<Property Name="Source[2].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
 				<Property Name="Source[2].File[0].dest" Type="Str">{BAC2ED85-D01A-4C57-A2DB-F57FC1924CFD}</Property>
 				<Property Name="Source[2].File[0].name" Type="Str">rgpna.exe</Property>
-				<Property Name="Source[2].File[0].runEXE" Type="Bool">true</Property>
 				<Property Name="Source[2].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
 				<Property Name="Source[2].File[0].Shortcut[0].name" Type="Str">Администрирование</Property>
-				<Property Name="Source[2].File[0].Shortcut[0].subDir" Type="Str">skil2</Property>
+				<Property Name="Source[2].File[0].Shortcut[0].subDir" Type="Str">SMVL</Property>
 				<Property Name="Source[2].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[2].File[0].tag" Type="Str">{428DEFE6-5403-454C-9918-5C0327667559}</Property>
 				<Property Name="Source[2].FileCount" Type="Int">1</Property>
@@ -916,7 +946,7 @@
 				<Property Name="Source[3].File[0].name" Type="Str">Readrems.exe</Property>
 				<Property Name="Source[3].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
 				<Property Name="Source[3].File[0].Shortcut[0].name" Type="Str">WatchDog</Property>
-				<Property Name="Source[3].File[0].Shortcut[0].subDir" Type="Str">skil2</Property>
+				<Property Name="Source[3].File[0].Shortcut[0].subDir" Type="Str">SMVL</Property>
 				<Property Name="Source[3].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[3].File[0].tag" Type="Str">{B6C348FC-C63A-4126-94A2-A9B641B6B64E}</Property>
 				<Property Name="Source[3].FileCount" Type="Int">1</Property>
@@ -944,6 +974,42 @@
 				<Property Name="Source[8].tag" Type="Ref">/My Computer/qw.htm</Property>
 				<Property Name="Source[8].type" Type="Str">File</Property>
 				<Property Name="SourceCount" Type="Int">9</Property>
+			</Item>
+			<Item Name="readrems2" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{F1BF665C-A9FD-4152-9502-B0252365DA66}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{DC87C3CF-AA46-4190-8321-684B31543709}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">readrems2</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../skil/My Application</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Destination[0].destName" Type="Str">readrems2.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../skil/My Application/readrems2.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../skil/My Application/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PDview.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2B033413-3283-498E-9831-5CCDC212F65C}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/readrems2.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
+				<Property Name="TgtF_companyName" Type="Str">TC</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">readrems2</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">3</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">readrems2</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2013 TC</Property>
+				<Property Name="TgtF_productName" Type="Str">readrems2</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{76E0E1A1-A861-4FF0-92AF-5B4C7C50FFC2}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">readrems2.exe</Property>
 			</Item>
 		</Item>
 	</Item>
