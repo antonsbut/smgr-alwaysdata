@@ -102,7 +102,6 @@
 				<Item Name="SaveSigTab.vi" Type="VI" URL="../pdv_usb/70user.lib/DynSubfcns/Sigt_lib.llb/SaveSigTab.vi"/>
 				<Item Name="tt2sigt.vi" Type="VI" URL="../pdv_usb/70user.lib/DynSubfcns/Sigt_lib.llb/tt2sigt.vi"/>
 			</Item>
-			<Item Name="dir.mnu" Type="Document" URL="../pdv_usb/70user.lib/DynSubfcns/dir.mnu"/>
 		</Item>
 		<Item Name="graph&amp;ind" Type="Folder">
 			<Item Name="AllSig.vi" Type="VI" URL="../pdv_usb/70user.lib/graph&amp;ind.llb/AllSig.vi"/>
@@ -131,8 +130,6 @@
 			<Item Name="LoadDev.vi" Type="VI" URL="../pdv_usb/lib/LoadDev.vi"/>
 			<Item Name="Message.vi" Type="VI" URL="../pdv_usb/lib/Message.vi"/>
 			<Item Name="NewObjDlg.vi" Type="VI" URL="../pdv_usb/lib/NewObjDlg.vi"/>
-			<Item Name="open3000.vi" Type="VI" URL="../pdv_usb/lib/open3000.vi"/>
-			<Item Name="open_dev3.vi" Type="VI" URL="../pdv_usb/lib/open_dev3.vi"/>
 			<Item Name="ReservWL.vi" Type="VI" URL="../pdv_usb/lib/ReservWL.vi"/>
 			<Item Name="sav_dat2db.vi" Type="VI" URL="../pdv_usb/lib/sav_dat2db.vi"/>
 			<Item Name="sav_dat2dbo_w.vi" Type="VI" URL="../pdv_usb/lib/sav_dat2dbo_w.vi"/>
@@ -152,6 +149,7 @@
 			<Item Name="3000pars.vi" Type="VI" URL="../Rtusbapi.llb/3000pars.vi"/>
 			<Item Name="arr2clust.vi" Type="VI" URL="../Rtusbapi.llb/arr2clust.vi"/>
 			<Item Name="byte2sgl.vi" Type="VI" URL="../Rtusbapi.llb/byte2sgl.vi"/>
+			<Item Name="close3000.vi" Type="VI" URL="../close3000.vi"/>
 			<Item Name="CreateInstance.vi" Type="VI" URL="../Rtusbapi.llb/CreateInstance.vi"/>
 			<Item Name="getflash.vi" Type="VI" URL="../Rtusbapi.llb/getflash.vi"/>
 			<Item Name="GetHandle.vi" Type="VI" URL="../Rtusbapi.llb/GetHandle.vi"/>
@@ -161,14 +159,18 @@
 			<Item Name="InitModule.vi" Type="VI" URL="../Rtusbapi.llb/InitModule.vi"/>
 			<Item Name="LoadDSP.vi" Type="VI" URL="../Rtusbapi.llb/LoadDSP.vi"/>
 			<Item Name="mergerr.vi" Type="VI" URL="../Rtusbapi.llb/mergerr.vi"/>
+			<Item Name="open3000.vi" Type="VI" URL="../pdv_usb/lib/open3000.vi"/>
+			<Item Name="open_dev3.vi" Type="VI" URL="../pdv_usb/lib/open_dev3.vi"/>
 			<Item Name="ReadData.vi" Type="VI" URL="../Rtusbapi.llb/ReadData.vi"/>
 			<Item Name="ReleaseInstance.vi" Type="VI" URL="../Rtusbapi.llb/ReleaseInstance.vi"/>
+			<Item Name="Rtusbapi.dll" Type="Document" URL="../pdv_usb/Rtusbapi.dll"/>
 			<Item Name="SetInputPars.vi" Type="VI" URL="../Rtusbapi.llb/SetInputPars.vi"/>
 			<Item Name="StartRead.vi" Type="VI" URL="../Rtusbapi.llb/StartRead.vi"/>
 			<Item Name="StopRead.vi" Type="VI" URL="../Rtusbapi.llb/StopRead.vi"/>
 			<Item Name="TestDSP.vi" Type="VI" URL="../Rtusbapi.llb/TestDSP.vi"/>
 		</Item>
 		<Item Name="Test" Type="Folder">
+			<Item Name="all_path.vi" Type="VI" URL="../pdv_usb/all_path.vi"/>
 			<Item Name="clear_db.vi" Type="VI" URL="../pdv_usb/clear_db.vi"/>
 			<Item Name="DBtest.vi" Type="VI" URL="../pdv_usb/DBtest.vi"/>
 			<Item Name="test_date_fmt.vi" Type="VI" URL="../pdv_usb/test_date_fmt.vi"/>
@@ -182,10 +184,10 @@
 			<Item Name="ArchViewer.vi" Type="VI" URL="../pdv_usb/ArchViewer.vi"/>
 			<Item Name="pdv_usb1.vi" Type="VI" URL="../pdv_usb/pdv_usb1.vi"/>
 		</Item>
-		<Item Name="pdmon.udl" Type="Document" URL="../pdv_usb/pdmon.udl"/>
 		<Item Name="tcps.ico" Type="Document" URL="../pdv_usb/tcps.ico"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Autoscale Polar as Needed.vi" Type="VI" URL="/&lt;vilib&gt;/picture/polarplt.llb/Autoscale Polar as Needed.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Calc Increment.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Calc Increment.vi"/>
@@ -324,7 +326,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Write PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Write PNG File.vi"/>
 			</Item>
-			<Item Name="close3000.vi" Type="VI" URL="../close3000.vi"/>
 			<Item Name="CreateTablesStruct.vi" Type="VI" URL="../pdv_usb/CreateTablesStruct.vi"/>
 			<Item Name="loadcontrsval.vi" Type="VI" URL="../pdv_usb/loadcontrsval.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
@@ -336,6 +337,47 @@
 			<Item Name="wrRtusbapi.dll" Type="Document" URL="../pdv_usb/wrRtusbapi.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
+			<Item Name="all_path" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{496A1879-8AA5-4345-BDA4-40418827C018}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{347CC81B-C6F5-4C0E-989A-74C527CFF851}</Property>
+				<Property Name="App_winsec.description" Type="Str">http://www.FALSE.com</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">all_path</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../usb3k1064/pdv_usb/app</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Destination[0].destName" Type="Str">all_path.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../usb3k1064/pdv_usb/app/all_path.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../usb3k1064/pdv_usb/app/bin</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{21097E0F-743E-4FBC-860C-D674C83B0E3C}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Test/all_path.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/contr_lib/is_exe.vi</Property>
+				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[2].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[2].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_companyName" Type="Str">NSTU</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">all_path</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">all_path</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 NSTU</Property>
+				<Property Name="TgtF_productName" Type="Str">all_path</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{63FC6B5F-4D5B-4DDB-964F-92C41F3547E2}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">all_path.exe</Property>
+			</Item>
 			<Item Name="AViewer" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{2FBE4E47-38A8-44D1-B5FE-35AAD8963F96}</Property>
@@ -376,6 +418,7 @@
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{FFD61643-CD5C-4C4D-8396-8BA7DA4EE8BC}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{ED8AE976-88B1-4881-B4D0-D6C2238D43CA}</Property>
+				<Property Name="App_waitDebugging" Type="Bool">true</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">PDV_USB</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
@@ -390,10 +433,15 @@
 				<Property Name="Destination[1].path" Type="Path">../usb3k1064/pdv_usb/app/bin</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/tcps.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B4D93FA9-1CCD-4A2B-AEC4-066819FADE95}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{21097E0F-743E-4FBC-860C-D674C83B0E3C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/pdv_usb1.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[1].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
@@ -403,7 +451,7 @@
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[2].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[2].properties[1].value" Type="Bool">false</Property>
 				<Property Name="Source[2].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
@@ -415,10 +463,15 @@
 				<Property Name="Source[3].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[3].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Rtusbapi/Rtusbapi.dll</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">TC</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">PDV_USB</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">6</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">PDV_USB</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 TC</Property>
