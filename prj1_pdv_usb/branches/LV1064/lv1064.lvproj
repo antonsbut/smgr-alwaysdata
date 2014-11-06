@@ -184,6 +184,7 @@
 			<Item Name="ArchViewer.vi" Type="VI" URL="../pdv_usb/ArchViewer.vi"/>
 			<Item Name="pdv_usb1.vi" Type="VI" URL="../pdv_usb/pdv_usb1.vi"/>
 		</Item>
+		<Item Name="H_sub.vi" Type="VI" URL="../pdv_usb/lib/H_sub.vi"/>
 		<Item Name="tcps.ico" Type="Document" URL="../pdv_usb/tcps.ico"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -373,7 +374,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="loadcontrsval.vi" Type="VI" URL="../pdv_usb/loadcontrsval.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/F/Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="sql_q.vi" Type="VI" URL="../pdv_usb/70user.lib/sql_q.vi"/>
 			<Item Name="TheSigTab.vi" Type="VI" URL="../pdv_usb/70user.lib/TheSigTab.vi"/>
 			<Item Name="user32.dll" Type="Document" URL="user32.dll">
@@ -512,7 +513,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">TC</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">PDV_USB</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">13</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">14</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">PDV_USB</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 TC</Property>
