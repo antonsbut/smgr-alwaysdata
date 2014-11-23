@@ -48,6 +48,7 @@
 			<Item Name="PhShftScale.vi" Type="VI" URL="../pdv_usb/70user.lib/calc_lib.llb/PhShftScale.vi"/>
 			<Item Name="QI2table.vi" Type="VI" URL="../pdv_usb/70user.lib/calc_lib.llb/QI2table.vi"/>
 			<Item Name="Regularty.vi" Type="VI" URL="../pdv_usb/70user.lib/calc_lib.llb/Regularty.vi"/>
+			<Item Name="s_interp.vi" Type="VI" URL="../pdv_usb/70user.lib/s_interp.vi"/>
 			<Item Name="sel_wnd.vi" Type="VI" URL="../pdv_usb/70user.lib/calc_lib.llb/sel_wnd.vi"/>
 			<Item Name="tg2table.vi" Type="VI" URL="../pdv_usb/70user.lib/calc_lib.llb/tg2table.vi"/>
 			<Item Name="tg_phi.vi" Type="VI" URL="../pdv_usb/70user.lib/calc_lib.llb/tg_phi.vi"/>
@@ -526,7 +527,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">TC</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">PDV_USB</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">21</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">24</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">PDV_USB</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 TC</Property>
