@@ -183,14 +183,17 @@
 			<Item Name="Utest.vi" Type="VI" URL="../pdv_usb/Utest.vi"/>
 			<Item Name="Utest2.vi" Type="VI" URL="../pdv_usb/Utest2.vi"/>
 			<Item Name="Utest3.vi" Type="VI" URL="../pdv_usb/Utest3.vi"/>
-			<Item Name="Utest4.vi" Type="VI" URL="../pdv_usb/Utest4.vi"/>
+			<Item Name="qw_test.vi" Type="VI" URL="../pdv_usb/qw_test.vi"/>
 			<Item Name="fit1.vi" Type="VI" URL="../pdv_usb/fit1.vi"/>
 		</Item>
 		<Item Name="top_vi" Type="Folder">
 			<Item Name="ArchViewer.vi" Type="VI" URL="../pdv_usb/ArchViewer.vi"/>
 			<Item Name="pdv_usb1.vi" Type="VI" URL="../pdv_usb/pdv_usb1.vi"/>
 		</Item>
+		<Item Name="pdmon.udl" Type="Document" URL="../pdmon.udl"/>
+		<Item Name="query.htm" Type="Document" URL="../pdv_usb/Doc/query.htm"/>
 		<Item Name="tcps.ico" Type="Document" URL="../pdv_usb/tcps.ico"/>
+		<Item Name="Usb3000.rtd" Type="Document" URL="../bin/Usb3000.rtd"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
@@ -481,18 +484,18 @@
 				<Property Name="Bld_buildSpecName" Type="Str">PDV_USB</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../lv1064/pdv_usb/app</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../usb3k1064/pdv_usb/app</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Destination[0].destName" Type="Str">Pdv_USB.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../NI_AB_PROJECTNAME/pdv_usb/app/Pdv_USB.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../usb3k1064/pdv_usb/app/Pdv_USB.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../NI_AB_PROJECTNAME/pdv_usb/app/bin</Property>
+				<Property Name="Destination[1].path" Type="Path">../usb3k1064/pdv_usb/app/bin</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/tcps.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B54404CC-161E-4702-88D7-E687DE147BF4}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A566500A-31B7-4559-A012-A7CBAF8B68EA}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/pdv_usb1.vi</Property>
@@ -523,17 +526,90 @@
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Rtusbapi/Rtusbapi.dll</Property>
 				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/query.htm</Property>
+				<Property Name="Source[5].newName" Type="Str">query.hta</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">6</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">TC</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">PDV_USB</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">24</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">29</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">PDV_USB</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 TC</Property>
 				<Property Name="TgtF_productName" Type="Str">PDV_USB</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{EC515DE8-82FA-48D0-BE72-0C7F67E9ECC3}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Pdv_USB.exe</Property>
+			</Item>
+			<Item Name="pdvinstaller" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">c:\UKI</Property>
+				<Property Name="Destination[0].path" Type="Path">/c/UKI</Property>
+				<Property Name="Destination[0].tag" Type="Str">{A09CB45A-F441-45D7-8D3C-780A0C4C1868}</Property>
+				<Property Name="Destination[0].type" Type="Str">absFolder</Property>
+				<Property Name="Destination[1].name" Type="Str">pdv</Property>
+				<Property Name="Destination[1].parent" Type="Str">{A09CB45A-F441-45D7-8D3C-780A0C4C1868}</Property>
+				<Property Name="Destination[1].tag" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
+				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{1478F207-677B-443B-B305-E924A6289F1B}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2010 SP1</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{9F6EADB1-707C-41AF-8F3D-FB856FA8BD1C}</Property>
+				<Property Name="DistPartCount" Type="Int">1</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/pdv_usb/pdvinstaller</Property>
+				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
+				<Property Name="INST_buildSpecName" Type="Str">pdvinstaller</Property>
+				<Property Name="INST_defaultDir" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
+				<Property Name="INST_productName" Type="Str">pdv_usb</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.3</Property>
+				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="MSI_arpCompany" Type="Str">TC</Property>
+				<Property Name="MSI_distID" Type="Str">{31EA652A-7C8A-4E59-B691-60D6B37D41F8}</Property>
+				<Property Name="MSI_osCheck" Type="Int">4</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{AAACF222-7D4D-4295-BDCD-44F5A693F9F4}</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">Pdv_USB.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Pdv_USB</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">lv1064</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{EC515DE8-82FA-48D0-BE72-0C7F67E9ECC3}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">PDV_USB</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/PDV_USB</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="Source[1].dest" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
+				<Property Name="Source[1].File[0].dest" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
+				<Property Name="Source[1].File[0].name" Type="Str">AViewer.exe</Property>
+				<Property Name="Source[1].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[1].File[0].Shortcut[0].name" Type="Str">AViewer</Property>
+				<Property Name="Source[1].File[0].Shortcut[0].subDir" Type="Str">lv1064</Property>
+				<Property Name="Source[1].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[1].File[0].tag" Type="Str">{4D0FC1AE-1A55-4AC2-A51E-3B8D42A0806A}</Property>
+				<Property Name="Source[1].FileCount" Type="Int">1</Property>
+				<Property Name="Source[1].name" Type="Str">AViewer</Property>
+				<Property Name="Source[1].tag" Type="Ref">/My Computer/Build Specifications/AViewer</Property>
+				<Property Name="Source[1].type" Type="Str">EXE</Property>
+				<Property Name="Source[2].dest" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
+				<Property Name="Source[2].name" Type="Str">pdmon.udl</Property>
+				<Property Name="Source[2].tag" Type="Ref">/My Computer/pdmon.udl</Property>
+				<Property Name="Source[2].type" Type="Str">File</Property>
+				<Property Name="Source[3].dest" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
+				<Property Name="Source[3].name" Type="Str">query.htm</Property>
+				<Property Name="Source[3].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[3].Shortcut[0].name" Type="Str">query</Property>
+				<Property Name="Source[3].Shortcut[0].subDir" Type="Str">PDV_Usb</Property>
+				<Property Name="Source[3].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[3].tag" Type="Ref">/My Computer/query.htm</Property>
+				<Property Name="Source[3].type" Type="Str">File</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
 		</Item>
 	</Item>
