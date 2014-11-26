@@ -417,7 +417,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="loadcontrsval.vi" Type="VI" URL="../pdv_usb/loadcontrsval.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="/F/Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="sql_q.vi" Type="VI" URL="../pdv_usb/70user.lib/sql_q.vi"/>
 			<Item Name="TheSigTab.vi" Type="VI" URL="../pdv_usb/70user.lib/TheSigTab.vi"/>
 			<Item Name="user32.dll" Type="Document" URL="user32.dll">
@@ -579,7 +579,7 @@
 				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{1478F207-677B-443B-B305-E924A6289F1B}</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{4C1F4C94-7160-4A79-8BE3-4BACCFDE93DF}</Property>
 				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2010 SP1</Property>
 				<Property Name="DistPart[0].upgradeCode" Type="Str">{9F6EADB1-707C-41AF-8F3D-FB856FA8BD1C}</Property>
 				<Property Name="DistPartCount" Type="Int">1</Property>
@@ -591,6 +591,7 @@
 				<Property Name="INST_productName" Type="Str">pdv_usb</Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.3</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">10018002</Property>
 				<Property Name="MSI_arpCompany" Type="Str">TC</Property>
 				<Property Name="MSI_distID" Type="Str">{31EA652A-7C8A-4E59-B691-60D6B37D41F8}</Property>
 				<Property Name="MSI_osCheck" Type="Int">4</Property>
