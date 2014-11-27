@@ -131,6 +131,7 @@
 			<Item Name="fp2htm.vi" Type="VI" URL="../pdv_usb/lib/fp2htm.vi"/>
 			<Item Name="GetDFromB.vi" Type="VI" URL="../pdv_usb/lib/GetDFromB.vi"/>
 			<Item Name="ins_subq.vi" Type="VI" URL="../pdv_usb/lib/ins_subq.vi"/>
+			<Item Name="izmer1.vi" Type="VI" URL="../pdv_usb/lib/izmer1.vi"/>
 			<Item Name="LoadDev.vi" Type="VI" URL="../pdv_usb/lib/LoadDev.vi"/>
 			<Item Name="Message.vi" Type="VI" URL="../pdv_usb/lib/Message.vi"/>
 			<Item Name="NewObjDlg.vi" Type="VI" URL="../pdv_usb/lib/NewObjDlg.vi"/>
@@ -418,7 +419,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="loadcontrsval.vi" Type="VI" URL="../pdv_usb/loadcontrsval.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/F/Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="sql_q.vi" Type="VI" URL="../pdv_usb/70user.lib/sql_q.vi"/>
 			<Item Name="TheSigTab.vi" Type="VI" URL="../pdv_usb/70user.lib/TheSigTab.vi"/>
 			<Item Name="user32.dll" Type="Document" URL="user32.dll">
