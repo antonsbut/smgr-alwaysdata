@@ -3,222 +3,141 @@
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1251">
 <meta name=Generator content="Microsoft Word 14 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
-a:visited, span.MsoHyperlinkFollowed
-	{color:purple;
-	text-decoration:underline;}
-p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-link:"Текст выноски Знак";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:8.0pt;
-	font-family:"Tahoma","sans-serif";}
-span.a
-	{mso-style-name:"Текст выноски Знак";
-	mso-style-link:"Текст выноски";
-	font-family:"Tahoma","sans-serif";}
-.MsoChpDefault
-	{font-family:"Calibri","sans-serif";}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
 
 </head>
 
-<body lang=RU link=blue vlink=purple>
+<body>
 
-<div class=WordSection1>
-
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Итак, что бы работало с базой данных нужно прежде всего, что
+<p>
+Итак, что бы работало с базой данных нужно прежде всего, что
 бы система была 32-битная,  далее СУБД (система управления базой данных, или
 просто сервер БД) был 32-битный, ODBC драйвер для этого сервера тоже был
-32-битный и наконец приложение также было 32 битным. </span></font></p>
+32-битный и наконец приложение также было 32 битным. </p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Кратенько:</span></font></p>
+<p>
+Кратенько:</p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Потребуется установить сервер БД, и затем драйвер для неё.
+<p>
+Потребуется установить сервер БД, и затем драйвер для неё.
 Создать саму базу данных.  Ну и потом настроить источник данных, ссылающийся на
-нужную БД. И настроить ссылку на этот источник данных </span></font><font
-face=Wingdings><span style='font-family:Wingdings'>J</span></font> Вот такая
+нужную БД. И настроить ссылку на этот источник данных J Вот такая
 задача.</p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Первое, качаем и устанавливаем сервер БД. Качаем его вот от
+<p>
+Первое, качаем и устанавливаем сервер БД. Качаем его вот от
 сюда <a
 href="http://www.enterprisedb.com/products-services-training/pgdownload#windows">http://www.enterprisedb.com/products-services-training/pgdownload#windows</a>
-</span></font></p>
+</p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>нужно выбрать Win x86-32.</span></font></p>
+<p>
+нужно выбрать Win x86-32.</p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Устанавливаем. Всё как обычно, следуем инструкциям мастера,
+<p>
+Устанавливаем. Всё как обычно, следуем инструкциям мастера,
 отвечаем на вопросы. Когда предложит указать путь, где будет храниться база,
 можно указать что-то С:\data, а можно и оставить как есть, если он не
-заругается на это. Предложит ввести пароль, надо ввести «</span></font><span
-lang=EN-US>postgres</span>», или что-то другое, но обязательно сделать запись
+заругается на это. Предложит ввести пароль, надо ввести «postgres», или что-то другое, но обязательно сделать запись
 об этом (запомнить). На последней странице, после установки убрать галочку и
 нажать «готово».</p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Следующий этап, качаем драйвер, последнюю версию, вот с этой
+<p>
+Следующий этап, качаем драйвер, последнюю версию, вот с этой
 странички <a href="http://www.postgresql.org/ftp/odbc/versions/msi/">http://www.postgresql.org/ftp/odbc/versions/msi/</a>,
 например вот это <a
-href="http://ftp.postgresql.org/pub/odbc/versions/msi/psqlodbc_09_01_0100-1.zip">http://ftp.postgresql.org/pub/odbc/versions/msi/psqlodbc_09_01_0100-1.zip</a></span></font></p>
+href="http://ftp.postgresql.org/pub/odbc/versions/msi/psqlodbc_09_01_0100-1.zip">http://ftp.postgresql.org/pub/odbc/versions/msi/psqlodbc_09_01_0100-1.zip</a></p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Скачиваем, распаковываем и включаем сетап или инстал, но
-совсем не апдейт.</span></font></p>
+<p>
+Скачиваем, распаковываем и включаем сетап или инстал, но
+совсем не апдейт.</p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Вроде ставиться без вопросов.</span></font></p>
+<p>
+Вроде ставиться без вопросов.</p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Теперь найдем в Пуске pgAdmin III, запустим его. Увидим вот
-такую печальную картинку </span></font></p>
+<p>
+Теперь найдем в Пуске pgAdmin III, запустим его. Увидим вот
+такую печальную картинку </p>
 
-<p class=MsoNormal align=center style='text-align:center'><font size=2
-face=Calibri><span style='font-size:11.0pt;line-height:115%'><img border=0
+<p><img border=0
 width=308 height=189
-src="Как%20установить%20и%20настроить%20БД.files/image001.jpg"></span></font></p>
+src="Как%20установить%20и%20настроить%20БД.files/image001.jpg"></p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Кликаем два раза на строчку с крестиком, и на предложение
-ввести пароль отвечем тем, что мы вводили на этапе установки, например «</span></font><span
+<p>
+Кликаем два раза на строчку с крестиком, и на предложение
+ввести пароль отвечем тем, что мы вводили на этапе установки, например «<span
 lang=EN-US>postgres</span>». Можно разрешить сохранить пароль. Далее кликнем
 правой кнопкой на ветке «Базы данных» и выберем «Новая база данных..». В поле
 «Имя введем «<span lang=EN-US>pdmon</span>», владелец «<span lang=EN-US>postgres</span>».
 Наживаем ОК, появиться новая ветка в дереве (см. рис ниже). Закрываем менеджер.
 </p>
 
-<p class=MsoNormal align=center style='text-align:center'><font size=2
-face=Calibri><span style='font-size:11.0pt;line-height:115%'><img border=0
+<p><img border=0
 width=306 height=263 id="Рисунок 1"
-src="Как%20установить%20и%20настроить%20БД.files/image002.jpg"></span></font></p>
+src="Как%20установить%20и%20настроить%20БД.files/image002.jpg"></p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Теперь откроем Пуск/панель
+<p>
+Теперь откроем Пуск/панель
 управления/Администрирование/Источники данных ODBC. На вкладке пользовательский
-DSN нажмем «добавить». </span></font></p>
+DSN нажмем «добавить». </p>
 
-<p class=MsoNormal align=center style='text-align:center'><font size=2
-face=Calibri><span style='font-size:11.0pt;line-height:115%'><img border=0
+<p><img border=0
 width=471 height=408
-src="Как%20установить%20и%20настроить%20БД.files/image003.png"></span></font></p>
+src="Как%20установить%20и%20настроить%20БД.files/image003.png"></p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Выбираем драйвер PostgreSQL ANSI</span></font></p>
+<p>
+Выбираем драйвер PostgreSQL ANSI</p>
 
-<p class=MsoNormal align=center style='text-align:center'><font size=2
-face=Calibri><span style='font-size:11.0pt;line-height:115%'><img border=0
+<p><img border=0
 width=468 height=350 id="Рисунок 4"
-src="Как%20установить%20и%20настроить%20БД.files/image004.jpg"></span></font></p>
+src="Как%20установить%20и%20настроить%20БД.files/image004.jpg"></p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Появиться окно настройки драйвера, заполняем поля в
-соответствии с картинкой:</span></font></p>
+<p>
+Появиться окно настройки драйвера, заполняем поля в
+соответствии с картинкой:</p>
 
-<p class=MsoNormal align=center style='text-align:center'><font size=2
-face=Calibri><span style='font-size:11.0pt;line-height:115%'><img border=0
+<p><img border=0
 width=464 height=263 id="Рисунок 10"
-src="Как%20установить%20и%20настроить%20БД.files/image005.png"></span></font></p>
+src="Как%20установить%20и%20настроить%20БД.files/image005.png"></p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Нажимаем «</span></font><span lang=EN-US>Test</span>» и если
+<p>
+Нажимаем «<span lang=EN-US>Test</span>» и если
 все ок, сохраняем и закрываем окно. В списке DSN появилась новая запись «<span
 lang=EN-US>pdmon</span>».</p>
 
-<p class=MsoNormal align=center style='text-align:center'><font size=2
-face=Calibri><span style='font-size:11.0pt;line-height:115%'><img border=0
+<p><img border=0
 width=461 height=198 id="Рисунок 13"
-src="Как%20установить%20и%20настроить%20БД.files/image006.jpg"></span></font></p>
+src="Как%20установить%20и%20настроить%20БД.files/image006.jpg"></p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Теперь идем в папку, куда установлена программа «</span></font><span
+<p>
+Теперь идем в папку, куда установлена программа «<span
 lang=EN-US>PDV</span>_<span lang=EN-US>USB</span>» и находим там файлик «<span
 lang=EN-US>pdmon</span>.<span lang=EN-US>udl</span>» и открываем его.</p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>На первой вкладке выбираем провайдер для ODBC драйвера, жмем
-«Далее»</span></font></p>
+<p>
+На первой вкладке выбираем провайдер для ODBC драйвера, жмем
+«Далее»</p>
 
-<p class=MsoNormal align=center style='text-align:center'><font size=2
-face=Calibri><span style='font-size:11.0pt;line-height:115%'><img border=0
+<p><img border=0
 width=280 height=350 id="Рисунок 16"
-src="Как%20установить%20и%20настроить%20БД.files/image007.jpg"></span></font></p>
+src="Как%20установить%20и%20настроить%20БД.files/image007.jpg"></p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>На второй вкладке выбираем из списка имя источника данных и
-начальный каталог.</span></font></p>
+<p>
+На второй вкладке выбираем из списка имя источника данных и
+начальный каталог.</p>
 
-<p class=MsoNormal align=center style='text-align:center'><font size=2
-face=Calibri><span style='font-size:11.0pt;line-height:115%'><img border=0
+<p><img border=0
 width=280 height=350 id="Рисунок 19"
-src="Как%20установить%20и%20настроить%20БД.files/image008.jpg"></span></font></p>
+src="Как%20установить%20и%20настроить%20БД.files/image008.jpg"></p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Проверяем подключение.</span></font></p>
+<p>
+Проверяем подключение.</p>
 
-<p class=MsoNormal align=center style='text-align:center'><font size=2
-face=Calibri><span style='font-size:11.0pt;line-height:115%'><img border=0
+<p><img border=0
 width=260 height=126 id="Рисунок 22"
-src="Как%20установить%20и%20настроить%20БД.files/image009.png"></span></font></p>
+src="Как%20установить%20и%20настроить%20БД.files/image009.png"></p>
 
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>Всё должно заработать!</span></font></p>
+<p>
+Всё должно заработать!</p>
 
-<p class=MsoNormal align=center style='text-align:center'><font size=2
-face=Calibri><span style='font-size:11.0pt;line-height:115%'>&nbsp;</span></font></p>
-
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>&nbsp;</span></font></p>
-
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>&nbsp;</span></font></p>
-
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>&nbsp;</span></font></p>
-
-<p class=MsoNormal><font size=2 face=Calibri><span style='font-size:11.0pt;
-line-height:115%'>&nbsp;</span></font></p>
-
-</div>
 
 </body>
 
