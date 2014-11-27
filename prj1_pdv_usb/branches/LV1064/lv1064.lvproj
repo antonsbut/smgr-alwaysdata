@@ -150,6 +150,7 @@
 			<Item Name="Wait_Buf.vi" Type="VI" URL="../pdv_usb/lib/Wait_Buf.vi"/>
 		</Item>
 		<Item Name="Reporter" Type="Folder">
+			<Item Name="forma.vi" Type="VI" URL="../pdv_usb/Reporter/forma.vi"/>
 			<Item Name="Format_graph_fields.vi" Type="VI" URL="../pdv_usb/Reporter/Format_graph_fields.vi"/>
 			<Item Name="Format_text_fields.vi" Type="VI" URL="../pdv_usb/Reporter/Format_text_fields.vi"/>
 			<Item Name="get_rep_param.vi" Type="VI" URL="../pdv_usb/Reporter/get_rep_param.vi"/>
@@ -203,7 +204,6 @@
 		</Item>
 		<Item Name="top_vi" Type="Folder">
 			<Item Name="ArchViewer.vi" Type="VI" URL="../pdv_usb/ArchViewer.vi"/>
-			<Item Name="forma.vi" Type="VI" URL="../pdv_usb/Reporter/forma.vi"/>
 			<Item Name="pdv_usb1.vi" Type="VI" URL="../pdv_usb/pdv_usb1.vi"/>
 		</Item>
 		<Item Name="index.htm" Type="Document" URL="../pdv_usb/Doc/index.htm"/>
@@ -522,7 +522,7 @@
 				<Property Name="Destination[1].path" Type="Path">../usb3k1064/pdv_usb/app/bin</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/tcps.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A566500A-31B7-4559-A012-A7CBAF8B68EA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E9CC1A5D-AACE-4304-8672-090FAC4C7224}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/pdv_usb1.vi</Property>
@@ -561,7 +561,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">TC</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">PDV_USB</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">29</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">31</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">PDV_USB</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 TC</Property>
