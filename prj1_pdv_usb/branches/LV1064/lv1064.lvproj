@@ -215,11 +215,9 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Autoscale Polar as Needed.vi" Type="VI" URL="/&lt;vilib&gt;/picture/polarplt.llb/Autoscale Polar as Needed.vi"/>
-				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Built App File Layout.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Built App File Layout.vi"/>
 				<Item Name="Calc Increment.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Calc Increment.vi"/>
-				<Item Name="Calc Long Word Padded Width.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Calc Long Word Padded Width.vi"/>
 				<Item Name="Calc Scale Specs.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Calc Scale Specs.vi"/>
 				<Item Name="Check Color Table Size.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Color Table Size.vi"/>
 				<Item Name="Check Data Size.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Data Size.vi"/>
@@ -231,7 +229,6 @@
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Close Registry Key.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Close Registry Key.vi"/>
-				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
 				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
 				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
 				<Item Name="compatOpenFileOperation.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatOpenFileOperation.vi"/>
@@ -239,7 +236,6 @@
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create ActiveX Event Queue.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Create ActiveX Event Queue.vi"/>
 				<Item Name="Create Error Clust.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Create Error Clust.vi"/>
-				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Create Mask By Alpha.vi"/>
 				<Item Name="Destroy ActiveX Event Queue.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Destroy ActiveX Event Queue.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
@@ -291,7 +287,6 @@
 				<Item Name="FindMatchingCloseTag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/FindMatchingCloseTag.vi"/>
 				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
 				<Item Name="Flatten Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pixmap.llb/Flatten Pixmap.vi"/>
-				<Item Name="Flip and Pad for Picture Control.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Flip and Pad for Picture Control.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="General Error Handler CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
@@ -330,7 +325,6 @@
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_report.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_report.lvclass"/>
 				<Item Name="NI_ReportGenerationCore.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_ReportGenerationCore.lvlib"/>
-				<Item Name="NI_Standard Report.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/Standard Report/NI_Standard Report.lvclass"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Num To Text.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Num To Text.vi"/>
 				<Item Name="Number of Waveform Samples.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Number of Waveform Samples.vi"/>
@@ -349,7 +343,6 @@
 				<Item Name="Read From XML File(array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File(array).vi"/>
 				<Item Name="Read From XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File(string).vi"/>
 				<Item Name="Read From XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File.vi"/>
-				<Item Name="Read PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Read PNG File.vi"/>
 				<Item Name="Read Registry Value DWORD.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Read Registry Value DWORD.vi"/>
 				<Item Name="Read Registry Value Simple STR.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Read Registry Value Simple STR.vi"/>
 				<Item Name="Read Registry Value Simple U32.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Read Registry Value Simple U32.vi"/>
@@ -411,9 +404,6 @@
 				<Item Name="WDT Number of Waveform Samples I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I32.vi"/>
 				<Item Name="WDT Number of Waveform Samples SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples SGL.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Write BMP Data To Buffer.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Write BMP Data To Buffer.vi"/>
-				<Item Name="Write BMP Data.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Write BMP Data.vi"/>
-				<Item Name="Write BMP File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Write BMP File.vi"/>
 				<Item Name="Write JPEG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Write JPEG File.vi"/>
 				<Item Name="Write PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Write PNG File.vi"/>
 				<Item Name="Write to XML File(array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(array).vi"/>
@@ -507,7 +497,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">TC</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">AViewer</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">1</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">2</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">AViewer</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 TC</Property>
@@ -574,7 +564,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">TC</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">PDV_USB</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">40</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">41</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">PDV_USB</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 TC</Property>
@@ -583,78 +573,62 @@
 				<Property Name="TgtF_targetfileName" Type="Str">Pdv_USB.exe</Property>
 			</Item>
 			<Item Name="pdvinstaller" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">c:\UKI</Property>
-				<Property Name="Destination[0].path" Type="Path">/c/UKI</Property>
-				<Property Name="Destination[0].tag" Type="Str">{A09CB45A-F441-45D7-8D3C-780A0C4C1868}</Property>
-				<Property Name="Destination[0].type" Type="Str">absFolder</Property>
-				<Property Name="Destination[1].name" Type="Str">pdv</Property>
-				<Property Name="Destination[1].parent" Type="Str">{A09CB45A-F441-45D7-8D3C-780A0C4C1868}</Property>
-				<Property Name="Destination[1].tag" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
-				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
-				<Property Name="Destination[2].name" Type="Str">bin</Property>
-				<Property Name="Destination[2].parent" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
-				<Property Name="Destination[2].tag" Type="Str">{5470D20A-9B68-4D1A-9A69-5C8BF89CA0DB}</Property>
-				<Property Name="Destination[2].type" Type="Str">userFolder</Property>
-				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Destination[0].name" Type="Str">pdv_usb</Property>
+				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{C20AE154-5C90-4668-BF2D-A3ECAA59390E}</Property>
+				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[0].unlock" Type="Bool">true</Property>
+				<Property Name="DestinationCount" Type="Int">1</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
 				<Property Name="DistPart[0].productID" Type="Str">{1478F207-677B-443B-B305-E924A6289F1B}</Property>
 				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2010 SP1</Property>
 				<Property Name="DistPart[0].upgradeCode" Type="Str">{9F6EADB1-707C-41AF-8F3D-FB856FA8BD1C}</Property>
 				<Property Name="DistPartCount" Type="Int">1</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../builds/pdv_usb/pdvinstaller</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/PDV_usb/pdvinstaller</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
 				<Property Name="INST_buildSpecName" Type="Str">pdvinstaller</Property>
-				<Property Name="INST_defaultDir" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
-				<Property Name="INST_productName" Type="Str">pdv_usb</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.3</Property>
+				<Property Name="INST_defaultDir" Type="Str">{C20AE154-5C90-4668-BF2D-A3ECAA59390E}</Property>
+				<Property Name="INST_productName" Type="Str">PDV_usb</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">10018002</Property>
 				<Property Name="MSI_arpCompany" Type="Str">TC</Property>
-				<Property Name="MSI_distID" Type="Str">{31EA652A-7C8A-4E59-B691-60D6B37D41F8}</Property>
-				<Property Name="MSI_osCheck" Type="Int">4</Property>
-				<Property Name="MSI_upgradeCode" Type="Str">{AAACF222-7D4D-4295-BDCD-44F5A693F9F4}</Property>
+				<Property Name="MSI_distID" Type="Str">{B62C32ED-88D4-4C34-B683-C24E7A986097}</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{2CDE7F0A-8C1A-4B2C-B2EB-18F67E20DD22}</Property>
 				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
 				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
 				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
 				<Property Name="RegDestCount" Type="Int">1</Property>
-				<Property Name="Source[0].dest" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
-				<Property Name="Source[0].File[0].dest" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
+				<Property Name="Source[0].dest" Type="Str">{C20AE154-5C90-4668-BF2D-A3ECAA59390E}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{C20AE154-5C90-4668-BF2D-A3ECAA59390E}</Property>
 				<Property Name="Source[0].File[0].name" Type="Str">Pdv_USB.exe</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Pdv_USB</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">lv1064</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str"></Property>
 				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{EC515DE8-82FA-48D0-BE72-0C7F67E9ECC3}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
 				<Property Name="Source[0].name" Type="Str">PDV_USB</Property>
 				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/PDV_USB</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
-				<Property Name="Source[1].dest" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
-				<Property Name="Source[1].File[0].dest" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
+				<Property Name="Source[1].dest" Type="Str">{C20AE154-5C90-4668-BF2D-A3ECAA59390E}</Property>
+				<Property Name="Source[1].File[0].dest" Type="Str">{C20AE154-5C90-4668-BF2D-A3ECAA59390E}</Property>
 				<Property Name="Source[1].File[0].name" Type="Str">AViewer.exe</Property>
 				<Property Name="Source[1].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
 				<Property Name="Source[1].File[0].Shortcut[0].name" Type="Str">AViewer</Property>
-				<Property Name="Source[1].File[0].Shortcut[0].subDir" Type="Str">lv1064</Property>
+				<Property Name="Source[1].File[0].Shortcut[0].subDir" Type="Str"></Property>
 				<Property Name="Source[1].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[1].File[0].tag" Type="Str">{4D0FC1AE-1A55-4AC2-A51E-3B8D42A0806A}</Property>
 				<Property Name="Source[1].FileCount" Type="Int">1</Property>
 				<Property Name="Source[1].name" Type="Str">AViewer</Property>
 				<Property Name="Source[1].tag" Type="Ref">/My Computer/Build Specifications/AViewer</Property>
 				<Property Name="Source[1].type" Type="Str">EXE</Property>
-				<Property Name="Source[2].dest" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
-				<Property Name="Source[2].name" Type="Str">pdmon.udl</Property>
-				<Property Name="Source[2].tag" Type="Ref">/My Computer/pdmon.udl</Property>
+				<Property Name="Source[2].dest" Type="Str">{C20AE154-5C90-4668-BF2D-A3ECAA59390E}</Property>
+				<Property Name="Source[2].name" Type="Str">Usb3000.rtd</Property>
+				<Property Name="Source[2].tag" Type="Ref">/My Computer/Usb3000.rtd</Property>
 				<Property Name="Source[2].type" Type="Str">File</Property>
-				<Property Name="Source[3].dest" Type="Str">{95C462DC-5C7F-4FC1-A0A6-787300BDE52B}</Property>
-				<Property Name="Source[3].name" Type="Str">query.htm</Property>
-				<Property Name="Source[3].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[3].Shortcut[0].name" Type="Str">query</Property>
-				<Property Name="Source[3].Shortcut[0].subDir" Type="Str">PDV_Usb</Property>
-				<Property Name="Source[3].ShortcutCount" Type="Int">1</Property>
-				<Property Name="Source[3].tag" Type="Ref">/My Computer/query.htm</Property>
-				<Property Name="Source[3].type" Type="Str">File</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 			</Item>
 		</Item>
 	</Item>
