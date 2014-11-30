@@ -121,31 +121,35 @@
 			<Item Name="wgrefs.vi" Type="VI" URL="../pdv_usb/70user.lib/graph&amp;ind.llb/wgrefs.vi"/>
 		</Item>
 		<Item Name="lib" Type="Folder">
+			<Item Name="db" Type="Folder">
+				<Item Name="bld_qry.vi" Type="VI" URL="../pdv_usb/lib/bld_qry.vi"/>
+				<Item Name="CreateTablesStruct.vi" Type="VI" URL="../pdv_usb/CreateTablesStruct.vi"/>
+				<Item Name="db_link.vi" Type="VI" URL="../pdv_usb/lib/db_link.vi"/>
+				<Item Name="ins_subq.vi" Type="VI" URL="../pdv_usb/lib/ins_subq.vi"/>
+				<Item Name="sav_dat2db.vi" Type="VI" URL="../pdv_usb/lib/sav_dat2db.vi"/>
+				<Item Name="sav_dat2dbo_w.vi" Type="VI" URL="../pdv_usb/lib/sav_dat2dbo_w.vi"/>
+				<Item Name="sel_obj.vi" Type="VI" URL="../pdv_usb/lib/sel_obj.vi"/>
+				<Item Name="sql_q.vi" Type="VI" URL="../pdv_usb/70user.lib/sql_q.vi"/>
+				<Item Name="table2bd.vi" Type="VI" URL="../pdv_usb/lib/table2bd.vi"/>
+				<Item Name="TblCheck.vi" Type="VI" URL="../pdv_usb/lib/TblCheck.vi"/>
+				<Item Name="time2_db.vi" Type="VI" URL="../pdv_usb/lib/time2_db.vi"/>
+			</Item>
 			<Item Name="About.vi" Type="VI" URL="../pdv_usb/lib/About.vi"/>
 			<Item Name="AplyDAQpars.vi" Type="VI" URL="../pdv_usb/lib/AplyDAQpars.vi"/>
 			<Item Name="AplyDAQpars1.vi" Type="VI" URL="../pdv_usb/lib/AplyDAQpars1.vi"/>
-			<Item Name="bld_qry.vi" Type="VI" URL="../pdv_usb/lib/bld_qry.vi"/>
 			<Item Name="calc.vi" Type="VI" URL="../pdv_usb/lib/calc.vi"/>
-			<Item Name="db_link.vi" Type="VI" URL="../pdv_usb/lib/db_link.vi"/>
 			<Item Name="dummy_read.vi" Type="VI" URL="../pdv_usb/lib/dummy_read.vi"/>
 			<Item Name="fp2htm.vi" Type="VI" URL="../pdv_usb/lib/fp2htm.vi"/>
 			<Item Name="GetDFromB.vi" Type="VI" URL="../pdv_usb/lib/GetDFromB.vi"/>
-			<Item Name="ins_subq.vi" Type="VI" URL="../pdv_usb/lib/ins_subq.vi"/>
 			<Item Name="izmer1.vi" Type="VI" URL="../pdv_usb/lib/izmer1.vi"/>
 			<Item Name="LoadDev.vi" Type="VI" URL="../pdv_usb/lib/LoadDev.vi"/>
 			<Item Name="Message.vi" Type="VI" URL="../pdv_usb/lib/Message.vi"/>
 			<Item Name="NewObjDlg.vi" Type="VI" URL="../pdv_usb/lib/NewObjDlg.vi"/>
 			<Item Name="ReservWL.vi" Type="VI" URL="../pdv_usb/lib/ReservWL.vi"/>
-			<Item Name="sav_dat2db.vi" Type="VI" URL="../pdv_usb/lib/sav_dat2db.vi"/>
-			<Item Name="sav_dat2dbo_w.vi" Type="VI" URL="../pdv_usb/lib/sav_dat2dbo_w.vi"/>
 			<Item Name="save_bin.vi" Type="VI" URL="../pdv_usb/lib/save_bin.vi"/>
 			<Item Name="save_bin2.vi" Type="VI" URL="../pdv_usb/lib/save_bin2.vi"/>
 			<Item Name="Scope.vi" Type="VI" URL="../pdv_usb/lib/Scope.vi"/>
-			<Item Name="sel_obj.vi" Type="VI" URL="../pdv_usb/lib/sel_obj.vi"/>
 			<Item Name="sliderstp.vi" Type="VI" URL="../pdv_usb/lib/sliderstp.vi"/>
-			<Item Name="table2bd.vi" Type="VI" URL="../pdv_usb/lib/table2bd.vi"/>
-			<Item Name="TblCheck.vi" Type="VI" URL="../pdv_usb/lib/TblCheck.vi"/>
-			<Item Name="time2access.vi" Type="VI" URL="../pdv_usb/lib/time2access.vi"/>
 			<Item Name="Ufft70.rtm" Type="Document" URL="../pdv_usb/lib/Ufft70.rtm"/>
 			<Item Name="Unwrap1.vi" Type="VI" URL="../pdv_usb/lib/Unwrap1.vi"/>
 			<Item Name="Wait_Buf.vi" Type="VI" URL="../pdv_usb/lib/Wait_Buf.vi"/>
@@ -413,14 +417,12 @@
 			<Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="CreateTablesStruct.vi" Type="VI" URL="../pdv_usb/CreateTablesStruct.vi"/>
 			<Item Name="get_graph4report.vi" Type="VI" URL="../pdv_usb/AViewer/get_graph4report.vi"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="loadcontrsval.vi" Type="VI" URL="../pdv_usb/loadcontrsval.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="sql_q.vi" Type="VI" URL="../pdv_usb/70user.lib/sql_q.vi"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="TheSigTab.vi" Type="VI" URL="../pdv_usb/70user.lib/TheSigTab.vi"/>
 			<Item Name="user32.dll" Type="Document" URL="user32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
