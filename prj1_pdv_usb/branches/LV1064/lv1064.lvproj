@@ -479,18 +479,18 @@
 				<Property Name="Bld_buildSpecName" Type="Str">AViewer</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../PDV/pdv_usb/app</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../usb3k1064/pdv_usb/app</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Destination[0].destName" Type="Str">AViewer.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../PDV/pdv_usb/app/AViewer.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../usb3k1064/pdv_usb/app/AViewer.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../PDV/pdv_usb/app/bin</Property>
+				<Property Name="Destination[1].path" Type="Path">../usb3k1064/pdv_usb/app/bin</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/tcps.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7122827F-343C-4022-90D4-92EC51DD461B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{8CFF8C64-0EA4-4BC1-BE8A-BE9DD7829B86}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/ArchViewer.vi</Property>
@@ -498,12 +498,11 @@
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Reporter/reportset.ini</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">TC</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">AViewer</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">3</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">4</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">AViewer</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 TC</Property>
