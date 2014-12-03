@@ -1,2 +1,2 @@
-schtasks /query 
+schtasks /query  /tn watchdog
 pause
