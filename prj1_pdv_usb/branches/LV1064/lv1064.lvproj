@@ -110,6 +110,7 @@
 		</Item>
 		<Item Name="graph&amp;ind" Type="Folder">
 			<Item Name="AllSig.vi" Type="VI" URL="../pdv_usb/70user.lib/graph&amp;ind.llb/AllSig.vi"/>
+			<Item Name="files_path.vi" Type="VI" URL="../pdv_usb/70user.lib/files_path.vi"/>
 			<Item Name="g2jpg.vi" Type="VI" URL="../pdv_usb/70user.lib/graph&amp;ind.llb/g2jpg.vi"/>
 			<Item Name="Graph.vi" Type="VI" URL="../pdv_usb/70user.lib/graph&amp;ind.llb/Graph.vi"/>
 			<Item Name="I_v_R_graph.vi" Type="VI" URL="../pdv_usb/70user.lib/graph&amp;ind.llb/I_v_R_graph.vi"/>
@@ -589,7 +590,7 @@
 				<Property Name="Source[7].itemID" Type="Ref">/My Computer/pdmon.udl</Property>
 				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Dependencies/vi.lib/NI_report.lvclass</Property>
+				<Property Name="Source[8].itemID" Type="Ref"></Property>
 				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[8].type" Type="Str">Library</Property>
 				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
@@ -600,7 +601,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">TCIS</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">PDV_USB</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">59</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">64</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">PDV_USB</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 TCIS</Property>
