@@ -34,6 +34,7 @@
 		<Item Name="top_vi" Type="Folder">
 			<Item Name="skil2.vi" Type="VI" URL="../skil2.vi"/>
 			<Item Name="skil3.vi" Type="VI" URL="../skil3.vi"/>
+			<Item Name="skil4.vi" Type="VI" URL="../skil4.vi"/>
 			<Item Name="readrems.vi" Type="VI" URL="../../inter/readrems.vi"/>
 			<Item Name="rgpna.vi" Type="VI" URL="../rgpna.vi"/>
 			<Item Name="readrems2.vi" Type="VI" URL="../readrems2.vi"/>
@@ -1010,6 +1011,207 @@
 				<Property Name="TgtF_productName" Type="Str">readrems2</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{76E0E1A1-A861-4FF0-92AF-5B4C7C50FFC2}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">readrems2.exe</Property>
+			</Item>
+			<Item Name="Copy of rgpn2" Type="EXE">
+				<Property Name="App_INI_aliasGUID" Type="Str">{42A7917C-90A1-40A0-A613-99F727F61FC4}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{20F9135B-D8FD-4EB0-A3EB-1096D23D14AB}</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">Регистратор грозовых перенапряжений и коронных разрядов - 2.</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Copy of rgpn2</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../skil/My Application</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
+				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">rgpn2.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../skil/My Application/Copy of rgpn2.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../skil/My Application/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[0]" Type="Str">{EC682335-7BC5-4786-B6D5-866BD538C6FE}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[1]" Type="Str">{89C4FBAF-6703-4D22-9E09-22C024C0E982}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[10]" Type="Str">{4BCA5B2C-9C62-4513-A554-91271EE943C6}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[11]" Type="Str">{CA4D7F79-AB23-4F29-9411-478092CB2A74}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[12]" Type="Str">{442F9A3F-A6C9-4FCD-8F47-62A64A84D9CA}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[13]" Type="Str">{15482B95-AE39-4148-AD63-7FEB964183C0}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[14]" Type="Str">{6328AFA8-4556-4865-9DCF-F86DA343E9B6}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[15]" Type="Str">{F438743B-7EF1-4127-B40F-DA0389553133}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[16]" Type="Str">{877B9776-8D61-4F16-A292-78C50C19D102}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[2]" Type="Str">{3A3A3D32-9F91-4523-9C9D-835AFF34D574}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[3]" Type="Str">{A72AD254-175F-4455-A219-171D802F5E98}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[4]" Type="Str">{48D576CD-57B7-4973-98FA-547AF521E24C}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[5]" Type="Str">{420FFDA7-3603-4757-B24C-76A75AB73EB2}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[6]" Type="Str">{F8DC8E10-864C-4EB1-AA0D-840CCE9D8A59}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[7]" Type="Str">{48172A05-E7A6-4FC3-A90B-20498FB5F07A}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[8]" Type="Str">{D9180A8D-4B55-4BB0-92E3-BA102BE2D0EF}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[9]" Type="Str">{20AD62F4-3847-450A-A652-2165CDC5B8E2}</Property>
+				<Property Name="Exe_actXinfo_enumCLSIDsCount" Type="Int">17</Property>
+				<Property Name="Exe_actXinfo_majorVersion" Type="Int">5</Property>
+				<Property Name="Exe_actXinfo_minorVersion" Type="Int">5</Property>
+				<Property Name="Exe_actXinfo_objCLSID[0]" Type="Str">{7F401E08-2C52-42B5-9DB7-B6A6D8AD46DC}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[1]" Type="Str">{C6E9B7BF-BF6C-47A4-A745-6C34A4004F76}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[10]" Type="Str">{033D12D5-10EA-4E6B-9CFB-4169A43E0E16}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[11]" Type="Str">{94F70B0D-2EF5-4044-A19D-21C1CA9E8D12}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[12]" Type="Str">{8136D7DF-8897-4322-A0D8-926CBFFA62B4}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[13]" Type="Str">{22185EC5-D555-4E3D-A450-352F1B5696B3}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[2]" Type="Str">{4CF5841F-83C3-4020-98C2-E86F58EF41AF}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[3]" Type="Str">{515B6006-048B-4E7B-BA87-36236EAB60DE}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[4]" Type="Str">{664E939C-0F31-448C-B653-307AB17A77E8}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[5]" Type="Str">{1137A08D-15DF-4074-912D-515E0A74355A}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[6]" Type="Str">{BFEDC39A-1172-464A-ADDF-1EB6F0FEECF9}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[7]" Type="Str">{43326C48-3582-4F9B-AADD-C1C43BBFF3E1}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[8]" Type="Str">{B56ED5CE-2526-4047-8A3C-8199C2004851}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[9]" Type="Str">{5CC8F780-F305-4CA5-87DC-05AAEAB02206}</Property>
+				<Property Name="Exe_actXinfo_objCLSIDsCount" Type="Int">14</Property>
+				<Property Name="Exe_actXinfo_progIDPrefix" Type="Str">Rgpn2</Property>
+				<Property Name="Exe_actXServerName" Type="Str">Rgpn2</Property>
+				<Property Name="Exe_actXServerNameGUID" Type="Str">{005DF045-63D9-4ED7-8967-B9AF15EFA371}</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PDview.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{1071C870-2D6E-40A1-A903-06F21F50920A}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/top_vi/skil3.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Show toolbar</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[1].type" Type="Str">Show Abort button</Property>
+				<Property Name="Source[1].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[2].type" Type="Str">Show vertical scroll bar</Property>
+				<Property Name="Source[1].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[3].type" Type="Str">Show horizontal scroll bar</Property>
+				<Property Name="Source[1].properties[3].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">4</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/index.htm</Property>
+				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/contents.htm</Property>
+				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/My Computer/err.htm</Property>
+				<Property Name="Source[12].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/My Computer/ini.htm</Property>
+				<Property Name="Source[13].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/My Computer/obrab.htm</Property>
+				<Property Name="Source[14].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[15].itemID" Type="Ref">/My Computer/post.htm</Property>
+				<Property Name="Source[15].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/My Computer/qw.htm</Property>
+				<Property Name="Source[16].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[17].itemID" Type="Ref">/My Computer/lib/allpaths.vi</Property>
+				<Property Name="Source[17].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[17].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[17].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[17].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[17].properties[2].type" Type="Str">Show horizontal scroll bar</Property>
+				<Property Name="Source[17].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[17].properties[3].type" Type="Str">Show vertical scroll bar</Property>
+				<Property Name="Source[17].properties[3].value" Type="Bool">false</Property>
+				<Property Name="Source[17].properties[4].type" Type="Str">Show toolbar</Property>
+				<Property Name="Source[17].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[17].properties[5].type" Type="Str">Show fp when called</Property>
+				<Property Name="Source[17].properties[5].value" Type="Bool">true</Property>
+				<Property Name="Source[17].properties[6].type" Type="Str">Show Abort button</Property>
+				<Property Name="Source[17].properties[6].value" Type="Bool">false</Property>
+				<Property Name="Source[17].propertiesCount" Type="Int">7</Property>
+				<Property Name="Source[17].type" Type="Str">VI</Property>
+				<Property Name="Source[18].itemID" Type="Ref">/My Computer/intercom/write_files_01.vi</Property>
+				<Property Name="Source[18].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[18].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[18].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[18].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[18].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[18].type" Type="Str">VI</Property>
+				<Property Name="Source[19].itemID" Type="Ref">/My Computer/7_1/save_bin2.vi</Property>
+				<Property Name="Source[19].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[19].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[19].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[19].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[19].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[19].type" Type="Str">VI</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/lib/files_to_sent.vi</Property>
+				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[2].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[2].properties[2].type" Type="Str">Show vertical scroll bar</Property>
+				<Property Name="Source[2].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[3].type" Type="Str">Show horizontal scroll bar</Property>
+				<Property Name="Source[2].properties[3].value" Type="Bool">false</Property>
+				<Property Name="Source[2].propertiesCount" Type="Int">4</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[20].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[20].itemID" Type="Ref">/My Computer/top_vi/skil4.vi</Property>
+				<Property Name="Source[20].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[20].type" Type="Str">VI</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/lib/lasttime_wr.vi</Property>
+				<Property Name="Source[3].properties[0].type" Type="Str">Show horizontal scroll bar</Property>
+				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[1].type" Type="Str">Show vertical scroll bar</Property>
+				<Property Name="Source[3].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[3].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[3].type" Type="Str">VI</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/lib/rot1.vi</Property>
+				<Property Name="Source[4].properties[0].type" Type="Str">Show vertical scroll bar</Property>
+				<Property Name="Source[4].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[4].properties[1].type" Type="Str">Show horizontal scroll bar</Property>
+				<Property Name="Source[4].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[4].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/lib/poster1.vi</Property>
+				<Property Name="Source[5].properties[0].type" Type="Str">Show vertical scroll bar</Property>
+				<Property Name="Source[5].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[5].properties[1].type" Type="Str">Show horizontal scroll bar</Property>
+				<Property Name="Source[5].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[5].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[5].type" Type="Str">VI</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/7_1/get_nearest.vi</Property>
+				<Property Name="Source[6].properties[0].type" Type="Str">Show vertical scroll bar</Property>
+				<Property Name="Source[6].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[6].properties[1].type" Type="Str">Show horizontal scroll bar</Property>
+				<Property Name="Source[6].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[6].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/100_ToSkil3/SendFile2.vi</Property>
+				<Property Name="Source[7].properties[0].type" Type="Str">Show vertical scroll bar</Property>
+				<Property Name="Source[7].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[7].properties[1].type" Type="Str">Show horizontal scroll bar</Property>
+				<Property Name="Source[7].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[7].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[7].type" Type="Str">VI</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/7_1/read_bin.vi</Property>
+				<Property Name="Source[8].properties[0].type" Type="Str">Show vertical scroll bar</Property>
+				<Property Name="Source[8].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[8].properties[1].type" Type="Str">Show horizontal scroll bar</Property>
+				<Property Name="Source[8].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[8].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[8].type" Type="Str">VI</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/filters_4_new_SMGR/filters.vi</Property>
+				<Property Name="Source[9].properties[0].type" Type="Str">Show vertical scroll bar</Property>
+				<Property Name="Source[9].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[9].properties[1].type" Type="Str">Show horizontal scroll bar</Property>
+				<Property Name="Source[9].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[9].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[9].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">21</Property>
+				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
+				<Property Name="TgtF_companyName" Type="Str">sibniie</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">rgpn2</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">84</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">rgpn2</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 sibniie</Property>
+				<Property Name="TgtF_productName" Type="Str">rgpn2</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{F7AFA721-9E06-4D06-998C-DAC7ECB7C347}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">rgpn2.exe</Property>
 			</Item>
 		</Item>
 	</Item>
